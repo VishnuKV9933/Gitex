@@ -73,7 +73,7 @@
     opacity: .4;
     background: radial-gradient(circle, rgba(3, 138, 228, 0.8), transparent 40% 100%);
     /* background: radial-gradient(circle, rgb(2, 146, 242) 50%, rgba(5, 1, 246, 0.6) 50%, rgba(233, 161, 235, 0) 100%); */
-    /* animation: move 8000ms ease-in-out infinite; */
+    animation: move 8000ms ease-in-out infinite;
 }
 
 @keyframes move {
