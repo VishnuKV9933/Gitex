@@ -1,0 +1,35 @@
+.presscenter-banner{
+    background: url('../../assets/globalmedia.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.darker-slider-background{
+    background-color: #e7e1e1e0;
+}
+
+.mediakitimg{
+content: '';
+position: absolute;
+bottom: -10%;
+right: 0;
+width: 20%;
+height: 30%;
+cursor: pointer;
+z-index: 100;
+}
+
+.translate-btn{
+    background-color: red; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border 700ms ease;
+    }
+    
+    .translate-btn:hover{
+        border: solid 2px red;
+    }

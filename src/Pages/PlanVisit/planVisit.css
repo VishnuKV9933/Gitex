@@ -1,0 +1,69 @@
+.plan-banner{
+    background-image: url("../../assets/planvisitbanner.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.second-header{
+    position: relative;
+}
+
+.second-header::after{
+    content: '';
+    position: absolute;
+    bottom: 0%;    
+    left: 50%;
+    width: 100px;
+    height: 5%;
+    background-color: red;
+    transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+    .second-header::after{
+        content: '';
+        bottom: 10%;    
+    }
+  }
+
+.third-section{
+    width: 100%;
+    height: 400px;
+    background: url(https://gitex.com/contents/Theme-3/images/tracksbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.company-container{
+    background: linear-gradient(to right,#1e5799 0%,#29a3da 0%,#011547 50%)
+}
+.company-container > .header{
+    position: relative;
+    
+}
+.company-container > .header::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    bottom: -10%;
+    left: 0%;
+    background-color: red;
+}
+
+@media (min-width: 640px){
+    .company-container > .header::before{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 10px;
+        bottom: -40%;
+        left: 0%;
+        background-color: red;
+    }
+}

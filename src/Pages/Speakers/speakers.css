@@ -1,0 +1,43 @@
+
+.list-item{
+    display: inline-block;
+    background: #ababab;
+    padding: 5px 8px 5px 8px ;
+    border-radius: 2px;
+    color: #fff;
+    margin-bottom: 2px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list-item:hover{
+    background-color: red;
+}
+
+.search-input{
+    border-top: 1px solid #ababab;
+  border-left: 1px solid  #ababab;   
+  border-bottom: 1px solid  #ababab;
+  padding-left: 5%;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.search-btn{
+    background: #ababab;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background: rgb(40, 68, 110);
+}
+
+.search-input:focus {
+    outline: none;        
+  }
+
+  
+
+ 

@@ -1,0 +1,15 @@
+.presscenterslider-container{
+    overflow-x: scroll;
+    
+   
+}
+
+.presscenterslider-container::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+.presscenterslider-element{
+    flex-shrink: 0;
+    
+}

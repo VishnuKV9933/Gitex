@@ -1,0 +1,108 @@
+.whyvishit-banner{
+    background: url('../../assets/whyvisitbanner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-section{
+    box-sizing: border-box;
+}
+
+.top-header::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    left: 0px;
+    height: 7px;
+    width: 120px;
+    background: red;
+    }
+
+    .translate-btn{
+        background-color: red; 
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: border 700ms ease;
+        }
+        
+        .translate-btn:hover{
+            border: solid 2px red;
+        }
+
+        
+.animateimgblur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* background: repeating-radial-gradient(white, white 10px, white 10px, white 20px); */
+    background: radial-gradient( white,transparent 80%);
+    background: radial-gradient( transparent );
+    backdrop-filter: blur(10px); 
+    opacity: 0.5;
+    animation: animateBlur 4s linear infinite;
+}
+
+.animateimg{
+    animation: animateimg 4s linear infinite;
+}
+
+@keyframes animateBlur{
+    0% {
+        background: radial-gradient( transparent );
+    }
+    25% {
+        background: radial-gradient( white,transparent 80%);
+        opacity: .1;
+    }
+    30% {
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+    100%{
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+}
+
+@keyframes animateimg {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.vertical-scroll-header::after{
+position: absolute;
+content: '';
+width: 130px;
+height: 7px;
+background-color: red;
+bottom: -20px;
+left: 0;
+}
+
+.happening-header::after{
+    content: '';
+    height: 7px;
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    background-color: red;
+    transform: translate(-50%);
+}
+
+.happening-elem{
+    transition: all 500ms ease;
+}

@@ -1,0 +1,117 @@
+.translate-banner{
+    background-image: url("../../assets/translatebanner2.png");
+    background-size: cover;
+    background-position: 100%;
+}
+
+.translate-btn{
+background-color: red; 
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: border 700ms ease;
+}
+
+.translate-btn:hover{
+    border: solid 2px red;
+}
+
+.animateImgblur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: repeating-radial-gradient(white, white 10px, white 10px, white 20px); */
+    background: radial-gradient( white,transparent 80%);
+    background: radial-gradient( transparent );
+    z-index: 10;
+    backdrop-filter: blur(10px); 
+    opacity: 0.5;
+    animation: animateblur 4s linear infinite;
+}
+
+.animateImg{
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animateblur{
+    0% {
+        background: radial-gradient( transparent );
+    }
+    25% {
+        background: radial-gradient( white,transparent 80%);
+        opacity: .1;
+    }
+    30% {
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+    100%{
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@media (min-width: 640px){
+    .banner{
+        background-position: center;
+    }
+}
+
+.bottom-container{
+    background: linear-gradient(to right,#1e5799 0%,#29a3da 0%,#011547 50%)
+}
+.bottom-header{
+    position: relative;
+    
+}
+.bottom-header::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 150%;
+    left: 0%;
+    background-color: red;
+}
+
+@media (min-width: 640px){
+    .bottom-header::before{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 10px;
+        top: 150%;
+        left: 0%;
+        background-color: red;
+    }
+}
+
+.companylist-container{
+    background-color: #fff;
+    margin-top: 10%;
+    height: fit-content;
+    width: 100%;
+}
+
+.bottom-subhead{
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+}
+

@@ -1,0 +1,23 @@
+.card-bottom{
+    background: #36454f;
+    color: #fff;
+}
+
+.animate-elem{
+    position: absolute;
+    height: 70%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: red;
+    opacity: .5;
+    transition: width 1s ease;
+}
+
+.animate-elem:hover{
+   width: 100%;
+}
+.speaker-img{
+    filter: grayscale(100%);
+}

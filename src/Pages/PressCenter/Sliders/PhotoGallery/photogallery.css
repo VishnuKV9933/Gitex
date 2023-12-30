@@ -1,0 +1,14 @@
+.industryslider-container{
+    overflow-x: scroll;
+   
+}
+
+.industryslider-container::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+.industryslider-element{
+    flex-shrink: 0;
+     transition: all 1000ms ease;
+}

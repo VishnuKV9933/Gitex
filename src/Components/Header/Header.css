@@ -1,0 +1,51 @@
+.top-bar {
+    z-index: 300;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    transition: height 0.1s linear;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    visibility: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    .top-bar {
+        visibility: visible;
+    }
+}
+
+  .visible{
+    display: block;
+  }
+  .invisible{
+    visibility: hidden !important;
+  }
+
+
+
+  .exhibit{
+    border: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  }
+  .exhibit:hover{
+    border-color: #fff;
+  }
+
+  .register{
+    border: 1px solid  #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .register:hover{
+    background-color: #fff;
+    color: black;
+  }
+
+  .header-menu{
+    position: fixed;
+    top: 17%;
+    right: 7%;
+    z-index: 350;
+  }
