@@ -1,0 +1,13 @@
+.workshop-btn{
+    background-color: red; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border 700ms ease;
+    }
+    
+    .workshop-btn:hover{
+        border: solid 2px red;
+    }

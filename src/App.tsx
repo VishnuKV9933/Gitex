@@ -9,6 +9,10 @@ import Speakers from './Pages/Speakers/Speakers';
 import PlanVisit from './Pages/PlanVisit/PlanVisit';
 import WhyVisit from './Pages/WhyVisit/WhyVisit';
 import PressCenter from './Pages/PressCenter/PressCenter';
+import WorkShopTraining from './Pages/WorkShopTraining/WorkShopTraining';
+import Faq from './Pages/Faq/Faq';
+import AboutGitex from './Pages/AboutGitex/AboutGitex';
+import LatestNews from './Pages/LatestNews/LatestNews';
 function App() {
   return (
     
@@ -21,7 +25,13 @@ function App() {
             <Route path="/speakers" element={<Speakers/>} /> 
             <Route path="/planvisit" element={<PlanVisit/>} />
             <Route path="/whyvisit" element={<WhyVisit/>} />
+            <Route path="/workshoptraining" element={<WorkShopTraining/>} />
+            <Route path="/faq" element={<Faq/>} />
+            <Route path="/aboutgitex" element={<AboutGitex/>} />
+            <Route path="/latestnews" element={<LatestNews/>} />
+            
           </Route>
+
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 
             <Route path="/presscenter" element={<PressCenter/>} /> 

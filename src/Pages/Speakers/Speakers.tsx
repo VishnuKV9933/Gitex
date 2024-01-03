@@ -9,9 +9,6 @@ import FixedHead from '../../Components/FixedHead/FixedHead';
 
 export default function Speakers():React.ReactElement {
   const [people,setPeople]= useState(persons)
-  // const [containerWidth,setContainerWidth] = useState(0)
-  // const [itemsGap,setItemsGap]=useState(0)
-  // const [containerPaddingX,setContainerPaddingX]  = useState(0)
   const [searchData,setSearchData] =useState<string>('')
   const Letters: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',"All"];
   
@@ -44,51 +41,13 @@ export default function Speakers():React.ReactElement {
 
   }
 
-  // useEffect(()=>{
-
-  //   if(containerRef.current){
-  //     setContainerWidth(containerRef.current.clientWidth)
-  //   }
-  //   let itemsInRow:number; 
-  //   let itemsInRowsecond:number; 
-  //   let gap=20
-  //   let totalGap
-  //   const paddingCalculater=()=>{
-
-  //      itemsInRow =Math.floor((containerWidth)/300)
-       
-       
-  //      totalGap =(itemsInRow-1)*gap
-
-  //     //  console.log(totalGap,"gap");
-  //      itemsInRowsecond= Math.floor((containerWidth-totalGap)/300)
-
-  //      if(itemsInRow===itemsInRowsecond){
-
-  //       if(containerRef.current){
-        
-  //        let paddingx= containerRef.current.clientWidth-(itemsInRowsecond*300)-totalGap
-  //        setcontainerPaddingX(paddingx)
-  //        setItemsGap(gap)
-  //       }
-  //         return
-  //      }else{
-  //       setContainerWidth(containerWidth-totalGap)
-  //       paddingCalculater()
-  //      }
-  //   }
-
-  //   paddingCalculater()
-    
-  // },[containerWidth])
-
-
-
 
   return (
+    <>
+    
+           <FixedHead/>
     <div className='relative speaker-container '>
            {/* <TopHome/> */}
-           <FixedHead/>
            <img className='speaker-banner w-full h-[300px]' src={banner} alt="img" />
         <ul className='w-full flex gap-1 px-[2%] pt-[2%] pb-[3px] flex-wrap justify-center items-center  '>
           {
@@ -143,5 +102,6 @@ export default function Speakers():React.ReactElement {
 
            </div>
     </div>
+    </>
   )
 }

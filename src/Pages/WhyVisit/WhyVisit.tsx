@@ -15,6 +15,7 @@ import HorizontalScroll from '../../Components/HorizontalScroll/HorizontalScroll
 import Happenings from '../../Components/Happenings/Happenings';
 import FixedHead from '../../Components/FixedHead/FixedHead';
 import MuitiCarousel from '../../Components/MultiCarousel/MuitiCarousel';
+import InfiniteSlider from '../../Components/InfiniteSlider/InfiniteSlider';
 
 
 
@@ -149,8 +150,9 @@ export default function WhyVisit():React.ReactElement {
     </div>
  
 {/* <HorizontalScroll/> */}
+<InfiniteSlider/>
 
-<MuitiCarousel/>
+{/* <MuitiCarousel/> */}
 </>
     </div>
   )

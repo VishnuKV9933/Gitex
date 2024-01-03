@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './HorizontalScroll.css'
 import HscrollElem from './HscrollElem';
+import { latestNews } from "../../Constants/constants";
 type Element = {
      img: string,
      content: string,
@@ -20,41 +21,9 @@ export default function HorizontalScroll():React.ReactElement {
     // const [moveleft]
     
   
-    const Array: Element[]=[
-        {img:"https://gitex.com/U ploads//Posts/news/dubai-rts.jpg",
-        content:"Press Release",
-        discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-         },
-         {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-         content:"Press Release",
-         discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-          },
-          {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-          content:"Press Release",
-          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-           },
-           {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-           content:"Press Release",
-           discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-            },
-            {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-            content:"Press Release",
-            discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-             },
-             {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-             content:"Press Release",
-             discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-              },
-              {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-              content:"Press Release",
-              discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-               },
 
-
-        
-    ]
   
-    const [elemts,setElements]=useState(Array)
+    const [elemts,setElements]=useState(latestNews)
 
     function handleMouseDawn(e: React.MouseEvent<HTMLDivElement>){
         setMouseDown(true)

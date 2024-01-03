@@ -42,7 +42,7 @@
     font-weight: 600px;
     color: white;
     width: fit-content;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     z-index: 10;
 }
 

@@ -1,0 +1,8 @@
+.about-banner{
+    background-image: url("https://gitex.com/uploads/Innerbanner/3fd097bd-9b39-452e-b18f-e43a98a6e704.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}

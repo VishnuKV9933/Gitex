@@ -14,7 +14,7 @@ export default function HscrollElem({elem}:any):React.ReactElement {
     <div
     onMouseOver={()=>{setAnimation(true)}}
     onMouseLeave={()=>setAnimation(false)}
- className='ml-[ 2%] shadow-md relative scroll-element overflow-hidden rounded-2xl w-[200px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-full '>
+ className='ml-[ 2%] shadow-md relative scroll-element overflow-hidden rounded-2xl w-[200px] sm:w-[300px] md:w-[350px] h-full '>
   <div className='h-scroll-animation relative w-full h-[50%] flex justify-center items-center '>
                {/* animation content start*/}
                 <div className={`${animation?'h-scroll-animation-elem-hover':'h-scroll-animation-elem'} `}> </div>

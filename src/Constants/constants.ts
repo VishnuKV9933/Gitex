@@ -14,36 +14,43 @@ import { INDUSTRYINSIGHTS, PRESSRELEASES,LATEXTNEWS } from "../Types";
 
 
 export const latestNews: LATEXTNEWS[]=[
-  {img:"https://gitex.com/U ploads//Posts/news/dubai-rts.jpg",
-  content:"Press Release",
-  discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-   },
-   {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-   content:"Press Release",
-   discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-    },
-    {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-    content:"Press Release",
-    discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-     },
-     {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-     content:"Press Release",
-     discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-      },
+  
       {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
       content:"Press Release",
       discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
        },
-       {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-       content:"Press Release",
-       discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
+       {img:"https://gitex.com/Uploads//Posts/Futuremobility/pressreleasegermany.jpg",
+       content:"Industry News",
+       discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
         },
-        {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
+        {img:"https://gitex.com/Uploads//Posts/news/enspress.jpg",
         content:"Press Release",
         discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
          },
-
-
+         {img:"https://gitex.com/Uploads//Posts/news/binancefutureblock.png",
+         content:"Industry News",
+         discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
+          },
+          {img:"https://gitex.com/Uploads//Posts/news/STEVEHOLDEN.jpg",
+          content:"Press Release",
+          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
+           },
+           {img:"https://gitex.com/Uploads//Posts/news/18.jpg",
+           content:"Industry News",
+           discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
+            },
+            {img:"https://gitex.com/Uploads//Posts/news/ciscosplunk.jpg",
+          content:"Press Release",
+          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
+           },
+           {img:"https://gitex.com/Uploads//Posts/news/attendeeinterview.jpg",
+           content:"Industry News",
+           discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
+            },
+            {img:"https://gitex.com/Uploads//Posts/news/amazonrainforest.jpg",
+          content:"Press Release",
+          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
+           },
   
 ]
 

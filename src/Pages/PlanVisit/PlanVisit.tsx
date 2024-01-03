@@ -9,12 +9,14 @@ import FixedHead from '../../Components/FixedHead/FixedHead'
 
 export default function PlanVisit():React.ReactElement {
   return (
-    <div>
+    <>
         <div className='w-full '>
             <FixedHead/>
             <div className='plan-banner flex justify-center items-end pb-[4%]  text-white'>
                 <h1 className='text-2xl md:text-4xl font-bold'>PLAN YOUR VISIT TO GITEX GLOBAL</h1>
-                 </div>
+            </div>
+
+
                  {/* second section */}
             <div className=' flex flex-col justify-center md:justify-start items-center h-[500px] text-center'>
               <h1 className='second-header text-2xl md:text-5xl font-semibold text-blue-900 md:py-[4%]'>GITEX Visa Assistance</h1>
@@ -101,6 +103,6 @@ export default function PlanVisit():React.ReactElement {
                         {/* --------------------------------- */}
                 </div>
         </div>
-    </div>
+    </>
   )
 }
