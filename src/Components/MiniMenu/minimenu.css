@@ -1,0 +1,49 @@
+.transparent-blur {
+    background-color: hwb(0 6% 94% / 0.69); /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(2px); 
+    color: white;
+  }
+  
+  .open-animation{
+    transition: all 600ms ease;
+  }
+  
+  .menu-ul{
+   
+    animation: menuheight 300ms ease-in;
+    transition: height 1500ms ease;
+    overflow: hidden;
+  } 
+  
+
+  .li-menu{
+    cursor: pointer;
+    padding-left: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+  }
+
+  @keyframes menulist {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    100% {
+      opacity: 1;
+      visibility: visible; 
+    }
+  }
+  
+
+  
+  .arlink{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+  }
