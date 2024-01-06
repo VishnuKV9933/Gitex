@@ -78,6 +78,7 @@ export default function MiniHeader():React.ReactElement {
           alt="img"
           className={`h-[100%]  mt-2 'visible'`}
         />
+        {/* fdfdfd */}
       <div className=" text-black   flex justify-end items-center pr-[10%] gap-6 font-semibold relative   ">
         <div onClick={() => {dispatch(adjustOpen()) }}
           className="flex justify-center items-center cursor-pointer text-bas bg-white p-1" >
@@ -95,6 +96,7 @@ export default function MiniHeader():React.ReactElement {
           </div>
         </div>
       </div>
+      {/* fdfsdf */}
         </div>
 
       </div>
