@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { TiArrowSortedDown } from 'react-icons/ti';
 import logo from '../../assets/logo.png'
 import './miniheader.css'
@@ -9,34 +9,54 @@ import { RootState } from '../../Redux/Store';
 import { Link } from 'react-router-dom';
 import MiniMenu from '../MiniMenu/MiniMenu';
 
+
+
 export default function MiniHeader():React.ReactElement {
+  const elemRef = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
   const {value}= useSelector((state: RootState) => state.menu);
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  useEffect(()=>{
 
-    const handleScroll = () => {
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+  };
+  const handleIntersection: IntersectionObserverCallback = (entries) => {
    
-           
-    if(window.scrollY>150){
-      setVisible(false);
-    }else{
-      setVisible(true);
-    }
-            
+
+    
+
+    entries.forEach((entry)=>{
+
+      if(!entry.isIntersecting){
+
+        setVisible(false);
+      }else{
+        setVisible(true);
+      }
+          
+    })
+
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+  observer.observe(elemRef.current as Element);
+  return () => {
+    observer.disconnect();
 };
 
-    window.addEventListener('scroll', handleScroll);
+  },[])
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+
   return (
     <>
    
-      <div className="flex flex-col justify-center  py-[1%] bg-black px-[5%] h-[150px] w-full gap-[10%] md:hidden">
+      <div ref={elemRef} className="flex flex-col justify-center  py-[1%] bg-black px-[5%] h-[150px] w-full gap-[10%] md:hidden">
          
         <div className='flex justify-center items-center w-full gap-[5%]'>
 <Link to={'/register'}>
@@ -81,7 +101,7 @@ export default function MiniHeader():React.ReactElement {
 
 
 
-   {!visible && <div className="fixed top-0 left-0 z-[300] flex flex-col justify-center  py-[1%] bg-black px-[5%] h-[150px] w-full gap-[10%] md:hidden">
+   {!visible && <div className="fixed-miniheader fixed top-0 left-0 z-[300] flex flex-col justify-center  py-[1%] bg-black px-[5%] h-[150px]  gap-[10%] md:hidden">
          
          <div className='flex justify-center items-center w-full gap-[5%]'>
          <Link to={'/register'}>
