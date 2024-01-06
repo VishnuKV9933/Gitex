@@ -55,6 +55,8 @@ export default function MiniHeader():React.ReactElement {
 
   return (
     <>
+
+  
    
       <div ref={elemRef} className="flex flex-col justify-center  py-[1%] bg-black px-[5%] h-[150px] w-full gap-[10%] md:hidden">
          
@@ -80,10 +82,11 @@ export default function MiniHeader():React.ReactElement {
         />
         {/* fdfdfd */}
       <div className=" text-black   flex justify-end items-center pr-[10%] gap-6 font-semibold relative   ">
-        <div onClick={() => {dispatch(adjustOpen()) }} 
+        <div style={{background:'red'}}
+         onClick={() => {dispatch(adjustOpen()) }} 
           className={`${visible?"flex  justify-center items-center cursor-pointer text-bas bg-white p-1 ":"hidden"}  `}>
 
-{
+         {
           value &&
       <div className={`${visible?'h-[250px] w-[250px]  absolute top-[100%] left-[150%] translate-x-[-130%] z-[300]' :'minimenu-invisible'}   minimenuAnimation `}>
         <MiniMenu/>
