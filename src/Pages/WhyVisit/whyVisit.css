@@ -40,7 +40,6 @@
     top: 0;
     left: 0;
     z-index: 10;
-    /* background: repeating-radial-gradient(white, white 10px, white 10px, white 20px); */
     background: radial-gradient( white,transparent 80%);
     background: radial-gradient( transparent );
     backdrop-filter: blur(10px); 

@@ -2,20 +2,24 @@ import React, { useEffect, useState } from 'react'
 import FixedHead from '../../Components/FixedHead/FixedHead'
 import './faq.css'
 import { FaPlus } from "react-icons/fa";
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
+
 export default function Faq():React.ReactElement {
 
     const [expand,setExpand] =useState<string>('')
+    const dispatch = useDispatch();
+    
+useEffect(()=>{
+dispatch(menuClose());
+
+},[])
 
     function expandContainer(id:string) {
         if(expand===id) {return setExpand('')}
         setExpand(id)
       }
-
-    //   useEffect(()=>{
-    //     console.log(expand);
-        
-    //   },[expand])
-
   return (
     <>
           {/* banner start */}

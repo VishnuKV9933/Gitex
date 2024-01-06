@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import './translate.css'
 import overviewlogo from '../../assets/overviewlogoband.png'
 import animateImage from '../../assets/ani1.jpg'
@@ -13,18 +13,23 @@ import ur from '../../assets/ur.png'
 import fs from '../../assets/fs.png'
 import fb from '../../assets/fb.png'
 import mm from '../../assets/mm.png'
-
-
-
 import { useTranslation } from 'react-i18next';
+
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
+
+
+
 
 export default function Translate():React.ReactElement {
    
     const { t} = useTranslation();
 
-    // const changeLanguage = (language: string) => {
-    //     i18n.changeLanguage(language);
-    //   };
+    const dispatch = useDispatch();
+useEffect(()=>{
+  dispatch(menuClose());
+},[])
       return (
         <div>
 {/* banner top */}

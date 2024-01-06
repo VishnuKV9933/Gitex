@@ -44,7 +44,7 @@ export default function MenuItems(): React.ReactElement {
       </div>
       { active==='ATTEND' ? <IoIosArrowDown/>:<IoIosArrowForward/>  }
         </div>
-      <ul className={`${active==='ATTEND'?'h-[280px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <ul className={`${active==='ATTEND'?'h-[200px]':'h-[0px]'} open-animation  overflow-hidden`}>
         <Link to={'/speakers'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300  `}>Speakers 2023</li>
         </Link>
@@ -57,8 +57,6 @@ export default function MenuItems(): React.ReactElement {
         <Link to={'/workshoptraining'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Workshops & Training</li>
         </Link>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Press Registration</li>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Speaker Registration</li>
         <Link to={'/presscenter'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Press Centre</li>
         </Link>
@@ -79,7 +77,9 @@ export default function MenuItems(): React.ReactElement {
         <Link to={'/faq'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>FAQs</li>
         </Link>
+        <Link to={'/latestnews'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Latest News</li>
+        </Link>
       </ul>
 {/* ------------------------------------------- */}
 
@@ -89,14 +89,19 @@ export default function MenuItems(): React.ReactElement {
       </div>
       { active==='EXHIBIT' ? <IoIosArrowDown/>:<IoIosArrowForward/>   }
         </div>
-      <ul className={`${active==='EXHIBIT'?'h-[280px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <ul className={`${active==='EXHIBIT'?'h-[160px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <Link to={'/whyexhibit'}>
         <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>Why Exhibit</li>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Exhibit GITEX 2024</li>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>GITEX AFRICA 2024</li>
-        <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>GITEX EUROPE 2025</li>
+      </Link>
+        <Link to={'/mediapartners'}> 
         <li className={`hover:ml-2 li-menu transition-all duration-300`}> Media Partners</li>
+        </Link>
+        <Link to={'/associationspartners'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}> Associations and Partners</li>
+        </Link>
+        <Link to={'/communitypartners'}>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Community Partners</li>
+        </Link>
       </ul>
 {/* ------------------------------------------- */}
 
@@ -106,10 +111,39 @@ export default function MenuItems(): React.ReactElement {
       </div>
       { active==='THEMES' ? <IoIosArrowDown/>:<IoIosArrowForward/> }
         </div>
-      <ul className={`${active==='THEMES'?'h-[120px]':'h-[0px]'} open-animation  overflow-hidden`}>
-        <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>About GITEX</li>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>FAQs</li>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Latest News</li>
+      <ul className={`${active==='THEMES'?'h-[360px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <Link to={'/ai'}>
+        <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>AI</li>
+      </Link>
+
+      <Link to={'/telecoms'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Telecoms</li>
+
+      </Link>
+      <Link to={'/cybersecurity'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Cybersecurity</li>
+      </Link>
+
+      <Link to={'/mobility'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Future Mobility</li>
+      </Link>
+      
+      <Link to={'/developer'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Coders/Developers</li>
+      </Link>
+
+      <Link to={'/metaverse'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Metaverse</li>
+      </Link>
+      <Link to={'/youth'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>YouthX</li>
+      </Link>
+      <Link to={'/sustainability'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>Sustainability</li>
+      </Link>
+      <Link to={'/cto'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>CTO World Congress</li>
+      </Link>
       </ul>
 {/* ------------------------------------------- */}
 
@@ -120,8 +154,10 @@ export default function MenuItems(): React.ReactElement {
       </div>
       { active==='ALLSHOWS' ? <IoIosArrowDown/>:<IoIosArrowForward/> }
         </div>
-      <ul className={`${active==='ALLSHOWS'?'h-[120px]':'h-[0px]'} open-animation  overflow-hidden`}>
-        <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>About GITEX</li>
+      <ul className={`${active==='ALLSHOWS'?'h-[40px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <Link to={'/'}>
+        <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>GITEX GLOBAL</li>
+      </Link>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>FAQs</li>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Latest News</li>
       </ul>

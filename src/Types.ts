@@ -21,3 +21,9 @@ export  interface Person {name:string,
         content: string,
         discription: string,
         };
+
+    export interface  MEDIAPARTNER {
+        img?: string,
+        discription?: string,
+        header?: string,
+        };

@@ -13,6 +13,19 @@ import WorkShopTraining from './Pages/WorkShopTraining/WorkShopTraining';
 import Faq from './Pages/Faq/Faq';
 import AboutGitex from './Pages/AboutGitex/AboutGitex';
 import LatestNews from './Pages/LatestNews/LatestNews';
+import AssociationsPartners from './Pages/AssociationsPartners/AssociationsPartners';
+import MediaPartners from './Pages/MediaPartners/MediaPartners';
+import CommunityPartners from './Pages/CommunityPartners/CommunityPartners';
+import WhyExhibit from './Pages/WhyExhibit/WhyExhibit';
+import AI from './Pages/AI/AI';
+import Telecoms from './Pages/Telecoms/Telecoms';
+import Cybersecurity from './Pages/Cybersecurity/Cybersecurity';
+import Mobility from './Pages/Mobility/Mobility';
+import Developer from './Pages/Developer/Developer';
+import Metaverse from './Pages/Metaverse/Metaverse';
+import Youth from './Pages/Youth/Youth';
+import Sustainability from './Pages/Sustainability/Sustainability';
+import Cto from './Pages/CTO/Cto';
 function App() {
   return (
     
@@ -29,14 +42,23 @@ function App() {
             <Route path="/faq" element={<Faq/>} />
             <Route path="/aboutgitex" element={<AboutGitex/>} />
             <Route path="/latestnews" element={<LatestNews/>} />
-            
+            <Route path="/associationspartners" element={<AssociationsPartners/>} />
+            <Route path="/mediapartners" element={<MediaPartners/>} />
+            <Route path="/communitypartners" element={<CommunityPartners/>} />
+            <Route path="/whyexhibit" element={<WhyExhibit/>} />
+            <Route path="/ai" element={<AI/>} />
+            <Route path="/telecoms" element={<Telecoms/>} />
+            <Route path="/cybersecurity" element={<Cybersecurity/>} />
+            <Route path="/mobility" element={<Mobility/>} />
+            <Route path="/developer" element={<Developer/>} />
+            <Route path="/metaverse" element={<Metaverse/>} />
+            <Route path="/youth" element={<Youth/>} />
+            <Route path="/sustainability" element={<Sustainability/>} />
+            <Route path="/cto" element={<Cto/>} />
           </Route>
-
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 
             <Route path="/presscenter" element={<PressCenter/>} /> 
-
-            
     </Routes>
   </BrowserRouter>
   );

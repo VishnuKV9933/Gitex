@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './exhibit.css'
 import topimg from "../../assets/registertop.jpg";
 import SelectInput from '../../Components/SelectInput/SelectInput';
@@ -8,8 +8,12 @@ import { countries } from "../../Constants/constants";
 import footerimg from '../../assets/form-footerimg.png'
 import socilalink from '../../assets/formfootersocila.png'
 import submitimg from '../../assets/formimg.png'
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
 
 export default function Exhibit():React.ReactElement {
+const dispatch = useDispatch();
 
     const [alert,setAlert]=useState(false)
 
@@ -40,6 +44,11 @@ export default function Exhibit():React.ReactElement {
     const sectorArray:string[]=['AR & VR','Artificial Inteligence','Block Chain','Cloud and Bigdata','Consumer Technologines','Globel smart cities','IOT','Network and Securiety']
     const titleArray: string[] = ["Adm.","Amb.","Brig Gen.","Adm.","Capt.","Chef","Sir,","Mr.","Mrs,", ];
     
+    useEffect(()=>{
+        dispatch(menuClose());
+        
+    },[])
+
     const handleSubmit=(e: React.FormEvent)=>{
         e.preventDefault()
         setAlert(true)

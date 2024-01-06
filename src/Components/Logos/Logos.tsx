@@ -14,14 +14,14 @@ import tegroup from '../../assets/tecomgroup-logo.jpg'
 export default function Logos():React.ReactElement {
   return (
     <>
-    <div className='w-full px-[5%] '>
+    <div className='w-full px-[5%] text-center'>
 
-        <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-bold text-xl mt-6 gap-10'>
+        <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-medium text-lg mt-6 gap-10'>
             TECHNOLOGY AND DIGITAL PARTNER
             <img className='w-[200px] sm:w-[25%]' src={tononous} alt="Logo Tonomus" />
        </div>
 
-       <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-bold text-xl mt-6 gap-10'>
+       <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-medium text-xl mt-6 gap-10'>
        GOLD SPONSORS
        <div className='flex flex-wrap justify-center items-center md:gap-10'>
 
@@ -31,7 +31,7 @@ export default function Logos():React.ReactElement {
        </div>
        </div>
 
-       <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-bold text-xl mt-6 gap-10'>
+       <div className='flex flex-col justify-center items-center  border-dotted border-b-4 w-full font-medium text-xl mt-6 gap-10'>
         <div className='flex '>
          <div>SILVER SPONSORS</div> 
         </div>
@@ -43,7 +43,7 @@ export default function Logos():React.ReactElement {
        </div>
        </div>
 
-       <div className='flex flex-wrap  justify-center items-stert   border-dotted border-b-4 w-full font-bold text-xl mt-6 gap-[50px] md:gap-[100px]'>
+       <div className='flex flex-wrap  justify-center items-stert   border-dotted border-b-4 w-full font-medium text-xl mt-6 gap-[50px] md:gap-[100px]'>
                 <div className='flex flex-col  items-start  p-[10px] gap-6 w-[200px]'>
                 MAJLIS LOUNGE SPONSOR
                 <img className='w-[200px] md:w-[90%] ' src={midis} alt="Logo Tonomus" />

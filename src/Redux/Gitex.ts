@@ -21,11 +21,17 @@ const mySlice = createSlice({
             state.value=true;
         }
     },
+    menuOpen: (state) => {
+      state.value=true
+  },
+  menuClose: (state) => {
+    state.value=false
+},
     increaseCount:(state)=>{
         state.count=  state.count+1;
     }
   },
 });
 
-export const { adjustOpen ,increaseCount } = mySlice.actions;
+export const { adjustOpen ,increaseCount ,menuClose} = mySlice.actions;
 export default mySlice.reducer;

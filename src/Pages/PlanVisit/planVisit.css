@@ -1,10 +1,17 @@
+
 .plan-banner{
     background-image: url("../../assets/planvisitbanner.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 150px;
+}
+
+@media (min-Width:640px){
+    .plan-banner{
+        height: 300px;
+    }
 }
 
 .second-header{

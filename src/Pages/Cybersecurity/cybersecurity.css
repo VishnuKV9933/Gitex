@@ -1,0 +1,10 @@
+.cyber-banner{
+    background: url('https://gitex.com/contents/Theme-3/images/cybersecurity-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container{
+    background-color: rgb(250, 246, 246);
+}

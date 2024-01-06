@@ -1,0 +1,53 @@
+.Root{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.Container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: scroll; */
+}
+/* .Container::-webkit-scrollbar{
+    display: none;
+} */
+.Slide{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Btn{
+    position: absolute;
+    top: 80%;
+    backdrop-filter: blur(10px);
+    background-color: hwb(0 37% 62% / 0.351);
+    opacity: .2;
+    border-radius: 50%;
+    color: rgb(255, 253, 253);
+    font-size: 1.5rem;
+    border-width: 0;
+    cursor: pointer;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Btn:hover{
+    background-color: hwb(0 90% 8% / 0.663);
+}
+.BtnLeft{
+    left: 200px;
+}
+
+.BtnRight{
+    right: 20px;
+}

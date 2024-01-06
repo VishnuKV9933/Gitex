@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./aboutgitex.css";
 import InfiniteSlider from "../../Components/InfiniteSlider/InfiniteSlider";
 import FixedHead from "../../Components/FixedHead/FixedHead";
+import { useDispatch } from 'react-redux';
+import { menuClose} from '../../Redux/Gitex';
 
 export default function AboutGitex(): React.ReactElement {
+  const dispatch = useDispatch();
+
+  useEffect(()=>{
+    dispatch(menuClose());
+},[])
   return (
     <>
       <FixedHead />

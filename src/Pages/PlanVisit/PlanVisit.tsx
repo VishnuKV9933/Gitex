@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './planVisit.css'
 import img1 from "../../assets/visitimg1.png"
 import img2 from "../../assets/visitimg2.png"
@@ -6,8 +6,16 @@ import img3 from "../../assets/visitimg3.png"
 import img4 from "../../assets/visitimg4.png"
 import { TbCircleDot } from "react-icons/tb";
 import FixedHead from '../../Components/FixedHead/FixedHead'
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
 
 export default function PlanVisit():React.ReactElement {
+    const dispatch = useDispatch();
+    useEffect(()=>{
+    dispatch(menuClose());
+
+},[])
   return (
     <>
         <div className='w-full '>

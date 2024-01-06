@@ -54,23 +54,7 @@ export default function HorizontalScroll():React.ReactElement {
             elemRef.current.scrollLeft=scrollLeft-walk
 
 
-            // if (walk < 0) {
-            //     // Clone the existing child elements
-            //     const cloneChildren = elemts.map((elem, index) => (
-            //         <div key={index} className='scroll-element w-[400px] h-full bg-green-500'>
-            //             {elem.name}
-            //         </div>
-            //     ));
-    
-            //     // Use Fragment to wrap the cloned elements
-            //     const fragment = document.createDocumentFragment();
-            //     cloneChildren.forEach(cloneChild => {
-            //         fragment.appendChild(cloneChild as unknown as Node);
-            //     });
-    
-            //     // Append the Fragment to the left side
-            //     elemRef.current.insertBefore(fragment, elemRef.current.firstChild);
-            // }
+       
             
         }
 

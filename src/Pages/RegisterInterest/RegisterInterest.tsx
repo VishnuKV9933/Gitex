@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./registerInterest.css";
 import topimg from "../../assets/registertop.jpg";
 import RegisterFormInput from "../../Components/RegisterFormInput/RegisterFormInput";
@@ -9,7 +9,12 @@ import footerimg from '../../assets/form-footerimg.png'
 import socilalink from '../../assets/formfootersocila.png'
 import submitimg from '../../assets/formimg.png'
 
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
+
 export default function RegisterInterest(): React.ReactElement {
+  const dispatch = useDispatch();
   const [firtName,setFirstName] = useState<string>('')
   const [lastName,setlastName] = useState<string>('')
   const [designation,setDesignation] = useState<string>('')
@@ -38,6 +43,11 @@ export default function RegisterInterest(): React.ReactElement {
     "Mr.",
     "Mrs,",
   ];
+
+  useEffect(()=>{
+    dispatch(menuClose());
+    },[])
+  
   const handleSubmit=(e: React.FormEvent)=>{
     e.preventDefault()
       setAlert(true)

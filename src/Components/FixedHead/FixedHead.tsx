@@ -10,10 +10,10 @@ import MenuItems from "../Menu/MenuItems";
 import { Link } from "react-router-dom";
 
 export default function FixedHead():React.ReactElement {
-
-    const [visible, setVisible] = useState(false);
-    const { value } = useSelector((state: RootState) => state.menu);
-    const dispatch = useDispatch();
+ 
+  const { value } = useSelector((state: RootState) => state.menu);
+  const dispatch = useDispatch();
+  const [visible, setVisible] = useState(false);
 
     useEffect(() => {
       const handleScroll = (e:Event) => {

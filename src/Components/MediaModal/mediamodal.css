@@ -1,0 +1,53 @@
+
+.mediamodal-content{
+   width: 60%;
+   min-height: 50%;
+   background-color: #01255c;
+   border: solid 2px white;
+   padding: 1%;
+   animation: modal 500ms ease;
+}
+
+
+.mediamodal-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    background-color:rgba(2, 0, 0, 0.4)
+}
+
+@media (min-width:640px){
+
+    .mediamodal-content{
+        min-height: 70%;
+        min-width: 50%;
+    }
+}
+.mediamodal-content >h1::before{
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+
+content:'';
+width: 50px;
+height: 4px;
+background: red;
+transform: translate(-50%);
+}
+
+@keyframes modal {
+    0% {
+      transform: translateY(-5%);
+      opacity: .7;
+    }
+
+    100% {
+        opacity: 1;
+      transform: translateY(0%);
+    }
+  }

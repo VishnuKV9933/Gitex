@@ -1,0 +1,64 @@
+.whyexhibit-banner{
+    background-image: url("../../assets//whyexhibit.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.box1{
+    border-left: solid 2px blue;
+    position: relative;
+}
+.box1::before{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+background-color: rgb(9, 9, 131);
+width: 15px;
+height: 15px;
+border-radius: 7.5px;
+transform: translate(-50%);
+}
+.exh-btn{
+    transform: translateY(-50%);
+    transition: border 400ms ease;
+}
+
+@media (min-Width:640px){
+    .whyexhibit-banner{
+        height: 300px;
+    }
+}
+
+.boxeffect{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 500ms ease;
+}
+
+.boxeffect:hover{
+    background-color: red;
+    border: none;
+    box-shadow: 5px 10px 20px 8px rgb(255, 0, 0,0.5)
+}
+
+.boxeffect:hover h1{
+    color: white;
+  }
+
+.boxeffect:hover p{
+    color: white; 
+  }
+
+  .banner-tracks{
+    background: url('https://gitex.com/contents/theme-3/images/tracksbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 10px 20px 5px rgba(39, 39, 206, 0.5);
+}

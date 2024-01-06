@@ -17,11 +17,18 @@ import {
   industryInsights,
   pressReleasereverse,
 } from "../../Constants/constants";
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
 
 export default function PressCenter(): React.ReactElement {
   const [headerVisible, setHeaderVisible] = useState(false);
   const hedderRef = useRef<HTMLDivElement | null>(null);
+const dispatch = useDispatch();
 
+useEffect(()=>{
+dispatch(menuClose());
+},[])
   useEffect(() => {
     function handleIntersection(
       entries: IntersectionObserverEntry[],

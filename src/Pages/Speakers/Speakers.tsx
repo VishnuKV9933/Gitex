@@ -1,4 +1,4 @@
-import React, {  useRef, useState } from 'react'
+import React, {  useEffect, useRef, useState } from 'react'
 import banner from "../../assets/speakerbanner.png"
 import './speakers.css'
 import { IoSearch } from "react-icons/io5";
@@ -6,6 +6,11 @@ import { persons } from '../../Constants/constants';
 import PersonCard from '../../Components/PersonCard/PersonCard';
 import { Person } from '../../Types';
 import FixedHead from '../../Components/FixedHead/FixedHead';
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
+
+
 
 export default function Speakers():React.ReactElement {
   const [people,setPeople]= useState(persons)
@@ -24,6 +29,10 @@ export default function Speakers():React.ReactElement {
     })
     setPeople(newPersons)
   }
+  const dispatch = useDispatch();
+useEffect(()=>{
+  dispatch(menuClose());
+},[])
 
   function searchPersons(): void {
 

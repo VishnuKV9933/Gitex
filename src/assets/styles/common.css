@@ -1,0 +1,130 @@
+.red-boxeffect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+    }
+    
+    .red-boxeffect:hover{
+        background-color: red;
+        border: none;
+        box-shadow: 5px 10px 20px 8px rgb(255, 0, 0,0.5)
+    }
+    
+    .red-boxeffect:hover h1{
+        color: white;
+      }
+    
+    .red-boxeffect:hover p{
+        color: white; 
+      }
+    
+
+
+    /* ----------------------animateimgblur-------------- */
+.animateimgblur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: radial-gradient( white,transparent 80%);
+    background: radial-gradient( transparent );
+    backdrop-filter: blur(10px); 
+    opacity: 0.5;
+    animation: animateBlur 4s linear infinite;
+}
+
+.animateimg{
+    animation: animateimg 4s linear infinite;
+}
+
+@keyframes animateBlur{
+    0% {
+        background: radial-gradient( transparent );
+    }
+    25% {
+        background: radial-gradient( white,transparent 80%);
+        opacity: .1;
+    }
+    30% {
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+    100%{
+        background: none;
+        backdrop-filter: blur(0); 
+        opacity: 0;
+    }
+}
+
+@keyframes animateimg {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+     /* ----------------------animateimgblur-------------- */
+
+/* ------------------exh-btn------------------------ */
+     .exh-btn{
+        transform: translateY(-50%);
+        transition: border 400ms ease;
+    }
+
+/* ------------------exh-btn------------------------ */
+
+/* ------------------ceter-red-underline------------------------ */
+
+.ceter-red-underline{
+    position: relative;
+}
+
+.ceter-red-underline::before{
+content: '';
+position: absolute;
+bottom: -20%;
+left: 50%;
+width: 70px;
+height: 5px;
+background-color: red;
+transform: translate(-50%);
+}
+
+@media (min-width:640px) {
+    .ceter-red-underline::before{
+        height: 8px;
+        width: 110px;
+    }
+}
+/* ------------------left-red-underline------------------------ */
+
+.left-red-underline{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.left-red-underline::before{
+content: '';
+position: absolute;
+bottom: -40%;
+left: 0%;
+width: 70px;
+height: 5px;
+background-color: red;
+}
+
+@media (min-width:640px) {
+    .left-red-underline::before{
+        height: 8px;
+        width: 110px;
+    }
+}
+/* ------------------left-red-underline------end------------------ */

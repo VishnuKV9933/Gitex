@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import FixedHead from '../../Components/FixedHead/FixedHead'
 import './workshop.css'
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
+
+
+
+
+
+
+
 export default function WorkShopTraining():React.ReactElement{
+  const dispatch = useDispatch();
+useEffect(()=>{
+  dispatch(menuClose());
+},[])
+
   return (
     <>
      {/* banner start */}

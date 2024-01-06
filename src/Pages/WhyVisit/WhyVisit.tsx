@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './whyVisit.css'
 import ai from '../../assets/ai.png'
 import de from '../../assets/de.png'
@@ -17,12 +17,18 @@ import FixedHead from '../../Components/FixedHead/FixedHead';
 import MuitiCarousel from '../../Components/MultiCarousel/MuitiCarousel';
 import InfiniteSlider from '../../Components/InfiniteSlider/InfiniteSlider';
 
-
+import { useDispatch } from 'react-redux';
+import { menuClose } from '../../Redux/Gitex';
 
 
 export default function WhyVisit():React.ReactElement {
 
 
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(menuClose());
+  },[])
+  
 
   return (
     <div className='w-full '>
@@ -147,7 +153,7 @@ export default function WhyVisit():React.ReactElement {
 
 <div  className='w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center'>
     <h1 className='happening-header text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative'>Latest News</h1>
-    </div>
+</div>
  
 {/* <HorizontalScroll/> */}
 <InfiniteSlider/>

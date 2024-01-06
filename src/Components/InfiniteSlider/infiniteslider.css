@@ -1,7 +1,7 @@
 .horizontal-scroll-container{
     display: flex;
     overflow-x: scroll;
-    background-color:  #f1f1f1;
+    background-color:  #ffffff;
     list-style: none;
     gap: 10px;
     /* transform: translate(-50%); */
