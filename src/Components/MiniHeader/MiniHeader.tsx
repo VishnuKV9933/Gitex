@@ -80,8 +80,8 @@ export default function MiniHeader():React.ReactElement {
         />
         {/* fdfdfd */}
       <div className=" text-black   flex justify-end items-center pr-[10%] gap-6 font-semibold relative   ">
-        <div onClick={() => {dispatch(adjustOpen()) }}
-          className="flex justify-center items-center cursor-pointer text-bas bg-white p-1" >
+        <div onClick={() => {dispatch(adjustOpen()) }} 
+          className={`${visible?"flex  justify-center items-center cursor-pointer text-bas bg-white p-1 ":"hidden"}  `}>
 
 {
           value &&
