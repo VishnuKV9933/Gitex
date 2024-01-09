@@ -1,9 +1,9 @@
 /* VerticalCarousel.css */
 
-.vertical-carousel-container {
+/* .vertical-carousel-container {
     display: flex;
     flex-direction: column;
-    height: 300px; /* Set a fixed height for the vertical carousel */
+    height: 300px; 
   }
   
   .vertical-carousel-item {
@@ -14,4 +14,16 @@
     border: 1px solid #ccc;
     background-color: #fff;
   }
-  
+   */
+   .card .img img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+   }
+
+   .carousel .card{
+    width: 80%;
+    height: 160px;
+    border: solid 1px black;
+    list-style: none;
+   }

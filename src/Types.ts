@@ -27,3 +27,11 @@ export  interface Person {name:string,
         discription?: string,
         header?: string,
         };
+
+        export interface  AISPEAKERS {
+            name?:string,
+            img?: string,
+            discription?: string,
+            position?: string,
+            company?:string
+            };

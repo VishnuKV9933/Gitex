@@ -154,11 +154,14 @@ export default function MenuItems(): React.ReactElement {
       </div>
       { active==='ALLSHOWS' ? <IoIosArrowDown/>:<IoIosArrowForward/> }
         </div>
-      <ul className={`${active==='ALLSHOWS'?'h-[40px]':'h-[0px]'} open-animation  overflow-hidden`}>
+      <ul className={`${active==='ALLSHOWS'?'h-[80px]':'h-[0px]'} open-animation  overflow-hidden`}>
       <Link to={'/'}>
         <li  className={`hover:ml-2 li-menu transition-all duration-300  `}>GITEX GLOBAL</li>
       </Link>
-        <li className={`hover:ml-2 li-menu transition-all duration-300`}>FAQs</li>
+
+       <Link to={'/aieverithing'}>
+        <li className={`hover:ml-2 li-menu transition-all duration-300`}>AI Everithing</li>
+        </Link>
         <li className={`hover:ml-2 li-menu transition-all duration-300`}>Latest News</li>
       </ul>
 {/* ------------------------------------------- */}

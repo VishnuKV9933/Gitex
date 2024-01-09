@@ -26,6 +26,8 @@ import Metaverse from './Pages/Metaverse/Metaverse';
 import Youth from './Pages/Youth/Youth';
 import Sustainability from './Pages/Sustainability/Sustainability';
 import Cto from './Pages/CTO/Cto';
+import AiEverithing from './PagesAI/AiEverithing/AiEverithing';
+import LayOutAI from './ComponentsAI/LayOutAI/LayOutAI';
 function App() {
   return (
     
@@ -56,6 +58,13 @@ function App() {
             <Route path="/sustainability" element={<Sustainability/>} />
             <Route path="/cto" element={<Cto/>} />
           </Route>
+
+         <Route
+          path="/aieverithing"
+          element={<LayOutAI><AiEverithing /></LayOutAI>}
+        />
+
+
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 
             <Route path="/presscenter" element={<PressCenter/>} /> 

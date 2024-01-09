@@ -1,0 +1,22 @@
+.toggle-container{
+    width: 100vw;
+    height: 100vh;
+    background: hwb(0 100% 0% / 0.801);
+    z-index: 1000;
+    overflow: hidden;
+}
+.toggle-container-close{
+    z-index: -100;
+    opacity: 0;
+}
+.rotation-box{
+    transition: transform 700ms ease;
+}
+
+.option-rotate{
+    transform: rotate(90deg);
+}
+
+.toggle-close{
+    translate: 100%;
+}

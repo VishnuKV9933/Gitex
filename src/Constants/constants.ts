@@ -8,131 +8,231 @@ import img6 from "../../src/assets/photogalarry3.jpg";
 import img7 from "../../src/assets/photogalarry4.jpg";
 import img8 from "../../src/assets/insights.png";
 
-import { INDUSTRYINSIGHTS, PRESSRELEASES,LATEXTNEWS,MEDIAPARTNER } from "../Types";
+import {
+  INDUSTRYINSIGHTS,
+  PRESSRELEASES,
+  LATEXTNEWS,
+  MEDIAPARTNER,
+  AISPEAKERS,
+} from "../Types";
 
-
-export const mediaArray :MEDIAPARTNER[]=[
-  {img:"https://gitex.com/Uploads//Posts/Community-Partners/Logo%20Only.png",
-   discription:"FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
-   header:"FLAIRSTECH"
+export const AiSpeakersArray: AISPEAKERS[] = [
+  {
+    name: "H.E. Younus Al Nasser",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/1.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "CEO",
+    company: "Dubai Data & Statistics Establishment, Digital Dubai",
   },
-  {img:"https://gitex.com/Uploads//Posts/SMEStreet%20logo.png",
-  discription:"SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
-  header:"SME STREET"
- },
- {img:"https://gitex.com/Uploads//Posts/Community-Partners/Bulgarian%20Association%20of%20Information%20Technologies_LOGO_en.jpg",
-  discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-  header:"PAKISTAN IT INDUSTRY ASSOCIATION"
- },
- {img:"https://gitex.com/Uploads//Posts/Community-Partners/pasha-logo.png",
- discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
- header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/Cyber%20Security%20Expert%20Logo.jpg",
-discription:"FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
-header:"FLAIRSTECH"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/01-primary-alpaca-logo.png",
-discription:"SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
-header:"SME STREET"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/logo_1.png",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/UAEGDA%20Logo_2023.png",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/500-inverted%20(1).png",
-discription:"FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
-header:"FLAIRSTECH"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/R.png",
-discription:"SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
-header:"SME STREET"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/Playbook%20Main%20Logo%20-%20Vector-1.png",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/Canadian%20Business%20Council%20Abu%20Dhabi%20logo.jpg",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/sfa-logo-web2.png",
-discription:"FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
-header:"FLAIRSTECH"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/%D0%BB%D0%BE%D0%B3%D0%BE_ITU-02.png",
-discription:"SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
-header:"SME STREET"
-},
-{img:"https://gitex.com/Uploads//Posts/int@jLogo.png",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/She-Code-Africa.png",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/Startup%20Blink%20Logo.png",
-discription:"FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
-header:"FLAIRSTECH"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/Startup%20Wise%20Guys.png",
-discription:"SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
-header:"SME STREET"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/SHEGA.jpg",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-{img:"https://gitex.com/Uploads//Posts/Community-Partners/ASTROLAB_logo.jpg",
-discription:"BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
-header:"PAKISTAN IT INDUSTRY ASSOCIATION"
-},
-  ]
 
-export const latestNews: LATEXTNEWS[]=[
-  
-      {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-      content:"Press Release",
-      discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-       },
-       {img:"https://gitex.com/Uploads//Posts/Futuremobility/pressreleasegermany.jpg",
-       content:"Industry News",
-       discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
-        },
-        {img:"https://gitex.com/Uploads//Posts/news/enspress.jpg",
-        content:"Press Release",
-        discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-         },
-         {img:"https://gitex.com/Uploads//Posts/news/binancefutureblock.png",
-         content:"Industry News",
-         discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
-          },
-          {img:"https://gitex.com/Uploads//Posts/news/STEVEHOLDEN.jpg",
-          content:"Press Release",
-          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-           },
-           {img:"https://gitex.com/Uploads//Posts/news/18.jpg",
-           content:"Industry News",
-           discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
-            },
-            {img:"https://gitex.com/Uploads//Posts/news/ciscosplunk.jpg",
-          content:"Press Release",
-          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-           },
-           {img:"https://gitex.com/Uploads//Posts/news/attendeeinterview.jpg",
-           content:"Industry News",
-           discription:"GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy"        
-            },
-            {img:"https://gitex.com/Uploads//Posts/news/amazonrainforest.jpg",
-          content:"Press Release",
-          discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-           },
-]
+  {
+    name: "Koo Ping Shung",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/Koo%20Ping%20Shung.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "President",
+    company: "AI Professionals Association",
+  },
+
+  {
+    name: "Dr. Yannis Ioannidis",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/yannis.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "President",
+    company: "Association of Computing Machinery (Greece)",
+  },
+
+  {
+    name: "Rt Hon Patricia Scotland KC",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/Patricia%20Scotland%20KC.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "Secretary-General",
+    company: "Commonwealth Secretariat",
+  },
+];
+
+export const mediaArray: MEDIAPARTNER[] = [
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Logo%20Only.png",
+    discription:
+      "FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
+    header: "FLAIRSTECH",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/SMEStreet%20logo.png",
+    discription:
+      "SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
+    header: "SME STREET",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Bulgarian%20Association%20of%20Information%20Technologies_LOGO_en.jpg",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/pasha-logo.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Cyber%20Security%20Expert%20Logo.jpg",
+    discription:
+      "FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
+    header: "FLAIRSTECH",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/01-primary-alpaca-logo.png",
+    discription:
+      "SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
+    header: "SME STREET",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/logo_1.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/UAEGDA%20Logo_2023.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/500-inverted%20(1).png",
+    discription:
+      "FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
+    header: "FLAIRSTECH",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/R.png",
+    discription:
+      "SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
+    header: "SME STREET",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Playbook%20Main%20Logo%20-%20Vector-1.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Canadian%20Business%20Council%20Abu%20Dhabi%20logo.jpg",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/sfa-logo-web2.png",
+    discription:
+      "FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
+    header: "FLAIRSTECH",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/%D0%BB%D0%BE%D0%B3%D0%BE_ITU-02.png",
+    discription:
+      "SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
+    header: "SME STREET",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/int@jLogo.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/She-Code-Africa.png",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Startup%20Blink%20Logo.png",
+    discription:
+      "FlairsTech is an international IT and Software Services company with over 1000 employees in five (5) offices on three (3) continents supporting thousands of projects. Over 100 global organizations in North America, Europe, the Middle East, and Australia rely on us daily for our Software Development, BPO / Customer Operations, B2C and B2B Support Services, Customer Experience, and innovative Digital/ Business Solutions. ",
+    header: "FLAIRSTECH",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/Startup%20Wise%20Guys.png",
+    discription:
+      "SME Street is a knowledge-oriented ecosystem for MSMEs and Startups, focusing on adding value to entrepreneurial success stories and enabling a growth-oriented business roadmap. ",
+    header: "SME STREET",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/SHEGA.jpg",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Community-Partners/ASTROLAB_logo.jpg",
+    discription:
+      "BAIT was established with the mission to protect the common interests of its members by actively working for the establishing of the digital society in our country, the development of the Bulgarian ICT industry, ICT professionals and the ICT market as a whole.",
+    header: "PAKISTAN IT INDUSTRY ASSOCIATION",
+  },
+];
+
+export const latestNews: LATEXTNEWS[] = [
+  {
+    img: "https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
+    content: "Press Release",
+    discription:
+      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/Futuremobility/pressreleasegermany.jpg",
+    content: "Industry News",
+    discription:
+      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/enspress.jpg",
+    content: "Press Release",
+    discription:
+      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/binancefutureblock.png",
+    content: "Industry News",
+    discription:
+      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/STEVEHOLDEN.jpg",
+    content: "Press Release",
+    discription:
+      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/18.jpg",
+    content: "Industry News",
+    discription:
+      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/ciscosplunk.jpg",
+    content: "Press Release",
+    discription:
+      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/attendeeinterview.jpg",
+    content: "Industry News",
+    discription:
+      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
+  },
+  {
+    img: "https://gitex.com/Uploads//Posts/news/amazonrainforest.jpg",
+    content: "Press Release",
+    discription:
+      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
+  },
+];
 
 export const gallery: string[] = [img1, img2, img3, img4, img5, img6, img7];
 

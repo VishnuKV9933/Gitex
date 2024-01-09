@@ -1,0 +1,14 @@
+/* MouseMoveEffect.css */
+
+  
+  .container-mousemove {
+    perspective: 1000px;
+  }
+
+  .wrapper-mousemove{
+      transform-style: preserve-3d;
+  }
+  #movingImage {
+    transition: transform 300ms ease;
+  }
+  

@@ -1,0 +1,175 @@
+:root {
+  --aiblue: #00aeba;
+}
+
+.large-index{
+    z-index: 500;
+}
+.left-blue-splictline{
+    margin-bottom: 15px;
+}
+
+.left-blue-splictline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--aiblue);
+  height: 4px;
+  width: 15px;
+  border-radius: 2px;
+}
+
+.left-blue-splictline::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+  background-color: var(--aiblue);
+  height: 4px;
+  width: 70px;
+  border-radius: 2px;
+}
+
+
+@media (min-width:640px){
+    .left-blue-splictline::before {
+        height: 4px;
+        border-radius: 4px;
+        bottom: -8px;
+        width: 20px;
+    }
+    .left-blue-splictline::after {
+        height: 4px;
+        border-radius: 4px;
+        bottom: -8px;
+        left: 25px;
+        width: 80px;
+    }
+}
+
+/* ------------------------------------ */
+
+.center-blue-splictline{
+    margin-bottom: 15px;
+}
+
+.center-blue-splictline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  background-color: var(--aiblue);
+  height: 4px;
+  width: 15px;
+  border-radius: 4px;
+  transform: translate(-250%);
+}
+
+.center-blue-splictline::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% + 20px);
+  background-color: var(--aiblue);
+  height: 4px;
+  width: 70px;
+  border-radius: 4px;
+  transform: translate(-50%);
+}
+
+
+@media (min-width:640px){
+    .center-blue-splictline::before {
+        height: 4px;
+        border-radius: 4px;
+        bottom: -8px;
+        width: 20px;
+    }
+    .center-blue-splictline::after {
+        height: 4px;
+        border-radius: 4px;
+        bottom: -8px;
+        left:calc(50% + 25px);
+        width: 80px;
+    }
+}
+
+/* -------------------- */
+
+/* backgroud-ai-darkblue */
+
+.backgroud-ai-darkblue{
+    background:url('../../assets/aifooterbg.png');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.ai-blue-font-Color{
+    color: #00aeba;
+}
+
+
+
+/* -----------------------ai---------------------------------- */
+
+.ai-header-btn{
+    background: #001e71;
+    color: white;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+    position: relative;
+    z-index: 50;
+    width: 120px;
+}
+.btn-text{
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+}
+.fixed-btn-border-ai{
+    border: solid 2px white;
+}
+
+.btn-top-half{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 50%;
+transition: width 700ms ease;
+background-color: rgba(0,174,186,1);
+}
+
+.btn-bottom-half{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    transition: width 700ms ease;
+    background-color: rgba(0,174,186,1);
+    }
+
+
+.ai-header-btn:hover .btn-top-half{
+    background:rgba(0,174,186,1);
+    width: 0%;
+}
+
+.ai-header-btn:hover .btn-bottom-half{
+    background:rgba(0,174,186,1);
+    width: 0%;
+}
+
+.btn-border-ai:hover{
+border: solid 1px rgba(0,174,186,1);
+}

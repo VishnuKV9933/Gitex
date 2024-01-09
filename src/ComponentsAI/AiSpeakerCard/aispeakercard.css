@@ -1,0 +1,21 @@
+.ai-card-container{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.aicard-animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00aeba;
+    opacity: 0.7;
+    transform: translate(-100%);
+    transition: transform 700ms ease;
+    font-size: 10px;
+    }
+
+    .ai-card-container:hover .aicard-animation{
+        transform: translate(0%);
+       
+    }
+    
