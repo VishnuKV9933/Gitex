@@ -9,6 +9,6 @@
       transform-style: preserve-3d;
   }
   #movingImage {
-    transition: transform 300ms ease;
+    transition: transform 100ms ease;
   }
   

@@ -4,6 +4,7 @@ import togglelogo from  '../../assets/togglelogo.png'
 import togglesocial from '../../assets/togglesocial.png'
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { Link } from 'react-router-dom';
 type aitoggleProps={
     toggle:boolean,
     setToggleOpen: (newToggle: boolean) => void;
@@ -64,13 +65,14 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                             </div>
                         </section>
                     </li>
+                    <Link to={'/aispeakers'}>
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>
                         SPEAKERS
                         <div onClick={()=>handleSetOpen('SPEAKERS')} className={`rotation-box w-[30px] h-[30px] bg-stone-200 rounded justify-center items-center flex ${open==='SPEAKERS'&&'option-rotate'}`}>
                                 <MdOutlineKeyboardArrowDown/>
                         </div>
-                        
                     </li>
+                    </Link>
                     <li className='w-full'>
                         <div  className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'> 
                         SELECTORS
@@ -96,12 +98,15 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                                 <MdOutlineKeyboardArrowDown/>
                         </div>
                     </li>
+                    <Link to={'/ainews'}>
+
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>
                         NEWS
                         <div onClick={()=>handleSetOpen('NEWS')} className={`rotation-box w-[30px] h-[30px] bg-stone-200 rounded justify-center items-center flex ${open==='NEWS'&&'option-rotate'}`}>
                                 <MdOutlineKeyboardArrowDown/>
                         </div>
                     </li>
+                    </Link>
                 </ul>
                 <div className='w-full flex justify-center ' >
                     <img className='cursor-pointer mt-5' src={togglesocial} alt="socila" />

@@ -14,7 +14,53 @@ import {
   LATEXTNEWS,
   MEDIAPARTNER,
   AISPEAKERS,
+  AINEWS
 } from "../Types";
+
+export const AinewsArray:AINEWS[]=[
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/GettyImages_.jpg',
+    company: 'Tech Crunch',
+    date: '04/08/2022',
+    discription: 'UAE aims to convert oil wealth into tech prowess',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/Jim-Chappell.jpg',
+    company: 'Arabian Business ',
+    date: '21/07/2022',
+    discription: 'AI is already delivering sustainability gains. It can do much, much more',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/Ai-News-Img_.png',
+    company: 'Khaleej Times',
+    date: '21/07/2022',
+    discription: 'UAE: Over 17,000 students volunteer, learn AI programming at summer camps',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/AI%20in%20Mena%20copy_0.png',
+    company: 'Oxford Business Group',
+    date: '21/07/2022',
+    discription: 'The competitive outlook for artificial intelligence in MENA',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/GettyImages_.jpg',
+    company: 'Tech Crunch',
+    date: '04/08/2022',
+    discription: 'UAE aims to convert oil wealth into tech prowess',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/Jim-Chappell.jpg',
+    company: 'Arabian Business ',
+    date: '21/07/2022',
+    discription: 'AI is already delivering sustainability gains. It can do much, much more',
+  },
+  {
+    img: 'https://www.ai-everything.com/Uploads//Posts/news/Ai-News-Img_.png',
+    company: 'Khaleej Times',
+    date: '21/07/2022',
+    discription: 'UAE: Over 17,000 students volunteer, learn AI programming at summer camps',
+  },
+]
 
 export const AiSpeakersArray: AISPEAKERS[] = [
   {
@@ -51,6 +97,38 @@ export const AiSpeakersArray: AISPEAKERS[] = [
       "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
     position: "Secretary-General",
     company: "Commonwealth Secretariat",
+  },
+  {
+    name: "Joe Reis",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/Joe%20Reis.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "CEO",
+    company: "Ternary Data",
+  },
+  {
+    name: "Jason Derulo",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/jsonderulo.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "Award Winning Singer & Song Writer",
+    company: "Investor",
+  },
+  {
+    name: "Steve Nouri",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/Steve%20Nouri.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "GenAI Works",
+    company: "Founder",
+  },
+  {
+    name: "James Wang",
+    img: "https://www.ai-everything.com/Uploads//Posts/Speakers%202023/jameswang1.jpg",
+    discription:
+      "H.E. Younus Al Nasser is a globally recognized leader in planning and implementing city-wide digital transformation, and building holistic data ecosystems. Currently serving as the Chief",
+    position: "Alibaba Cloud Intelligence",
+    company: "General Manager of UAE & Turkey",
   },
 ];
 

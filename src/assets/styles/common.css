@@ -129,3 +129,41 @@ background-color: red;
 }
 /* ------------------left-red-underline------end------------------ */
 
+/* -----------------banner---------------------- */
+.banner{
+    height:150px ;
+    width: 100%;
+}
+
+@media (min-width:640px) {
+    .banner{
+        height:200px ;
+    }
+}
+@media (min-width:768px) {
+    .banner{
+        height:250px ;
+    }
+}
+
+@media (min-width:1024px) {
+    .banner{
+        height:300px ;
+    }
+}
+/* -------------------banner-------------------- */
+
+
+/* sm: 640px;
+
+
+md: 768px;
+
+
+lg: 1024px;
+
+
+xl: 1280px;
+
+
+2xl: 1536px; */

@@ -6,7 +6,7 @@ type SpeakerCardProps={
 }
 export default function AiSpeakerCard({speaker}:SpeakerCardProps):React.ReactElement {
   return (
-    <div className='w-full h-full ai-card-container relative '>
+    <div className='w-full h-full ai-card-container relative max-w-[350px] '>
         <div className='text-sm text-white w-full h-[65%] aicard-animation flex justify-center text-center items-center'>
             {speaker.discription}
         </div>

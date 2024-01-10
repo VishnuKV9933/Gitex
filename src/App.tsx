@@ -28,6 +28,8 @@ import Sustainability from './Pages/Sustainability/Sustainability';
 import Cto from './Pages/CTO/Cto';
 import AiEverithing from './PagesAI/AiEverithing/AiEverithing';
 import LayOutAI from './ComponentsAI/LayOutAI/LayOutAI';
+import AISpeakers from './PagesAI/AISpeakers/AISpeakers';
+import AINews from './PagesAI/AINews/AINews';
 function App() {
   return (
     
@@ -59,11 +61,11 @@ function App() {
             <Route path="/cto" element={<Cto/>} />
           </Route>
 
-         <Route
-          path="/aieverithing"
-          element={<LayOutAI><AiEverithing /></LayOutAI>}
-        />
+  <Route path="/aieverithing" element={<LayOutAI><AiEverithing /></LayOutAI>}/>
+  <Route path="/aispeakers" element={<LayOutAI><AISpeakers /></LayOutAI>}/>
+  <Route path="/ainews" element={<LayOutAI><AINews /></LayOutAI>}/>
 
+  
 
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 

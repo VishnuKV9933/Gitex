@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./headerAi.css";
 import MiniHeaderAI from "../MiniHeaderAI/MiniHeaderAI";
+import { Link } from "react-router-dom";
 export default function HeaderAi(): React.ReactElement {
   const elementRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -65,9 +66,11 @@ export default function HeaderAi(): React.ReactElement {
               </li>
             </ul>
           </li>
+          <Link to={'/aispeakers'}>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             SPEAKERS
           </li>
+          </Link>
           <li className="sectors text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
             SECTORS
             <ul className="sectors-options">
@@ -85,9 +88,11 @@ export default function HeaderAi(): React.ReactElement {
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             ABOUT
           </li>
+          <Link to={'/ainews'}>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             NEWS
           </li>
+          </Link>
           <li className="flex items-center">
             <button className="ai-header-btn  btn-border-ai">
               <div className="btn-top-half"></div>
@@ -124,9 +129,11 @@ export default function HeaderAi(): React.ReactElement {
                 </li>
               </ul>
             </li>
+            <Link to={'/aispeakers'}>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               SPEAKERS
             </li>
+            </Link>
             <li className="sectors text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
               SECTORS
               <ul className="sectors-options">
@@ -144,9 +151,11 @@ export default function HeaderAi(): React.ReactElement {
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               ABOUT
             </li>
+            <Link to={'/ainews'}>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               NEWS
             </li>
+            </Link>
             <li className="flex items-center">
               <button className="ai-header-btn  fixed-btn-border-ai">
                 <div className="btn-top-half"></div>
