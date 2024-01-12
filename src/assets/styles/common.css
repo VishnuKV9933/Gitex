@@ -133,24 +133,30 @@ background-color: red;
 .banner{
     height:150px ;
     width: 100%;
+    font-size: small;
 }
 
-@media (min-width:640px) {
+@media (min-width:540px) {
     .banner{
         height:200px ;
+        font-size: 20px;
     }
 }
 @media (min-width:768px) {
     .banner{
         height:250px ;
+        font-size: 40px;
     }
 }
 
 @media (min-width:1024px) {
     .banner{
         height:300px ;
+        font-size: 60px;
     }
 }
+
+
 /* -------------------banner-------------------- */
 
 

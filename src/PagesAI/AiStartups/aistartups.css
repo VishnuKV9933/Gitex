@@ -1,0 +1,101 @@
+.aistartup.banner{
+    background: url('https://www.ai-everything.com/Uploads/InnerBanner/2b0721fb-cd69-4245-bc32-d6f11107e820.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.aistartup.banner > h1{
+    line-height: 1.5;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f4f4f4;
+    color: #fff;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(70deg,#1e235700,#1e235703 50%,#01adbb 50%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    position: relative;
+transform: translateY(50%);
+}
+
+
+
+.aistartup + section{
+   padding: 5%;
+}
+
+.aistartup img{
+    width: 100%;
+    height: 100%;
+}
+
+.aistartup + section > div{
+   display: flex;
+   justify-content: center;
+}
+.aistartup + section > div > div{
+    transition: all 700ms ease;
+    z-index: 10;
+}
+.zoom-img:hover {
+    transform: scale(1.01);
+    z-index: 5;
+}
+.zoom-img{
+    position: relative;
+    border: solid 4px #001e71;
+}
+.pos-up >h1{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+  
+}
+
+
+.pos-up:hover{
+    transform: translateY(-2%);
+    z-index: 5;
+}
+
+
+.top-sign{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-left: 5px solid #fff;
+    border-top: 5px solid #00acbb;
+    transition: all 700ms ease;
+}
+
+.zoom-img:hover .top-sign{
+    top: 5px;
+    left: 5px;
+ } 
+.bottom-sign{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #00acbb;
+    transition: all 700ms ease;
+}
+
+.zoom-img:hover .bottom-sign{
+    bottom: 5px;
+    right: 5px;
+ } 

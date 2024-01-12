@@ -87,9 +87,11 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 GITEX YOUTHX
                             </div>
+                            <Link to={'/aistartups'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 STARTUPS
                             </div>
+                            </Link>
                         </section>
                     </li>
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>

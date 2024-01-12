@@ -80,9 +80,11 @@ export default function HeaderAi(): React.ReactElement {
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 GITEX YOUTHX
               </li>
+              <Link to={'/aistartups'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 STARTUPS
               </li>
+              </Link>
             </ul>
           </li>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
@@ -143,9 +145,11 @@ export default function HeaderAi(): React.ReactElement {
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   GITEX YOUTHX
                 </li>
+                <Link to={'/aistartups'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   STARTUPS
                 </li>
+                </Link>
               </ul>
             </li>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
