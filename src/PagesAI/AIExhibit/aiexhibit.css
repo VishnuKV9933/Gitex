@@ -1,0 +1,181 @@
+.aiexhibit.banner{
+    background: url('https://www.ai-everything.com/Uploads/InnerBanner/fd706e62-39f3-4ac8-b066-c76ec884d3cb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aiexhibit.banner > h1{
+    line-height: 1.5;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f4f4f4;
+    color: #fff;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(70deg,#1e235700,#1e235703 50%,#01adbb 50%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    position: relative;
+transform: translateY(50%);
+}
+
+
+.aiexhibit + section{
+    padding: 7%;
+ }
+ 
+ .aiexhibit img{
+     width: 100%;
+     height: 100%;
+ }
+
+ h2{
+    color: rgb(121, 117, 117);
+    font-weight: 700;
+ }
+
+
+ .aiexhibit + section > div{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 500ms ease;
+    background-color: rgb(242, 242, 242);
+}
+
+.aiexhibit + section > div:hover{
+    transform: translateY(-3%);
+}
+
+.aiexhibit + section > div h1{
+color: #00acbb;
+}
+
+.aiexhibit + section > div:hover  h2{
+    color: #00acbb;
+}
+
+.zoom-aiex-img{
+    transition: all 700ms ease;
+    border: solid 4px #263866;
+}
+
+.top-sign{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-left: 5px solid #fff;
+    border-top: 5px solid #00acbb;
+    transition: all 700ms ease;
+    display: block;
+}
+
+.zoom-aiex-img:hover .top-sign{
+    top: 5px;
+    left: 5px;
+ } 
+.bottom-sign{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #00acbb;
+    transition: all 700ms ease;
+    display: block;
+}
+
+.zoom-aiex-img:hover .bottom-sign{
+    bottom: 5px;
+    right: 5px;
+ } 
+
+ .childone,.childtwo{
+    transition: all 1400ms ease;
+
+ }
+
+
+.zoom-aiex-img:hover{
+    transform: scale(1.03);
+}
+
+.move-child-out > .childone{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.move-child-out > .childtwo{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.move-child-in > .childone{
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.move-child-in > .childtwo{
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.square-bullet{
+    position: relative;
+    margin-left: 15px;
+}
+
+.square-bullet::before{
+content: '';
+position: absolute;
+top: 5px;
+left: -15px;
+width: 10px;
+height: 10px;
+background:#001e71;
+}
+
+.bg-blue-exhibitai{
+    background-color: rgb(242, 242, 242);
+}
+.chil-done,.child-two{
+    transition: all 1400ms ease;
+
+ }
+.sudden-open  .child-one{
+    transform: scale(.01);
+    opacity: 0;
+}
+
+.sudden-open  .child-two{
+    transform: scale(.01);
+    opacity: 0;
+}
+
+.rollcard-container{
+    transform-style: preserve-3d;
+}
+
+.shadow-dawn{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+.video-elem{
+    transition: all 1000ms ease;
+}
+
+.video-container > div{
+    transform: scale(0);
+    opacity: 0;
+}

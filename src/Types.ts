@@ -43,3 +43,10 @@ export interface AINEWS {
   date?: string;
   discription?: string;
 }
+
+export interface SPONSORSHIP {
+  img?: string;
+  headding?: string;
+  discription?: string;
+}
+

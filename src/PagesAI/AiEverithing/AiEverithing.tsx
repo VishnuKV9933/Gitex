@@ -160,7 +160,7 @@ export default function AiEverithing(): React.ReactElement {
           </div>
       </section>
 
-      <section className="w-full p-[5%]">
+      <section className="w-full p-[5%] ">
           <h1 className="text-center center-blue-splictline text-xl sm:text-2xl md:text-4xl text-blue-900 font-bold relative">THANK YOU TO OUR LEADING GLOBAL PARTNERS</h1>
       
           <div className="flex items-center justify-center w-full py-[5%] border-dotted border-b-4 ">

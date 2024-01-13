@@ -31,6 +31,7 @@ import LayOutAI from './ComponentsAI/LayOutAI/LayOutAI';
 import AISpeakers from './PagesAI/AISpeakers/AISpeakers';
 import AINews from './PagesAI/AINews/AINews';
 import AIStartups from './PagesAI/AiStartups/AIStartups';
+import AIExhibit from './PagesAI/AIExhibit/AIExhibit';
 function App() {
   return (
     
@@ -66,8 +67,9 @@ function App() {
   <Route path="/aispeakers" element={<LayOutAI><AISpeakers /></LayOutAI>}/>
   <Route path="/ainews" element={<LayOutAI><AINews /></LayOutAI>}/>
   <Route path="/aistartups" element={<LayOutAI><AIStartups /></LayOutAI>}/>
+  <Route path="/aiexhibit" element={<LayOutAI><AIExhibit /></LayOutAI>}/>
   
-
+  
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 
             <Route path="/presscenter" element={<PressCenter/>} /> 

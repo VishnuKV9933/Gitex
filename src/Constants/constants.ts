@@ -14,8 +14,44 @@ import {
   LATEXTNEWS,
   MEDIAPARTNER,
   AISPEAKERS,
-  AINEWS
+  AINEWS,
+  SPONSORSHIP
 } from "../Types";
+
+export const SponsorshipArroay :SPONSORSHIP[]=[
+   {
+    img: 'https://www.ai-everything.com/assets/img/Crowd.jpg',
+    headding: 'STRATEGIC - AFFIRM YOUR LEADERSHIP',
+    discription: 'Take the stage in front of the highest-powered decision-makers in AI. The apex level of branding, this is the prime opportunity for your company to remain part of the Middle East’s AI story for years to come.'
+  },
+  {
+    img: 'https://www.ai-everything.com/assets/img/Stands-2.jpg',
+    headding: 'PLATINUM - BE A PART OF THE NARRATIVE',
+    discription: 'Leave a long-lasting impression. The second-highest branding level allows your most senior thought leader to participate in and steer a panel discussion with some of the most sought after speakers in AI in the world today.'
+  },
+  {
+    img: 'https://www.ai-everything.com/assets/img/Crowd.jpg',
+    headding: 'STRATEGIC - AFFIRM YOUR LEADERSHIP',
+    discription: 'Take the stage in front of the highest-powered decision-makers in AI. The apex level of branding, this is the prime opportunity for your company to remain part of the Middle East’s AI story for years to come.'
+  },
+  
+  {
+    img: 'https://www.ai-everything.com/assets/img/Zone-1.jpg',
+    headding: 'SILVER - SHOWCASE YOUR ACHIEVEMENTS',
+    discription: 'Take to one of multiple vertical stages. A highly visible speaking position in front of a senior AI-driven audience to retell the amazing work your company is doing in key sectors influenced by AI adoption: government, finance, and more.'
+  },
+  {
+    img: 'https://www.ai-everything.com/assets/img/Zone-1.jpg',
+    headding: 'SILVER - SHOWCASE YOUR ACHIEVEMENTS',
+    discription: 'Take to one of multiple vertical stages. A highly visible speaking position in front of a senior AI-driven audience to retell the amazing work your company is doing in key sectors influenced by AI adoption: government, finance, and more.'
+  },
+  {
+    img: 'https://www.ai-everything.com/assets/img/Stands-2.jpg',
+    headding: 'PLATINUM - BE A PART OF THE NARRATIVE',
+    discription: 'Leave a long-lasting impression. The second-highest branding level allows your most senior thought leader to participate in and steer a panel discussion with some of the most sought after speakers in AI in the world today.'
+  },
+  
+]
 
 export const AinewsArray:AINEWS[]=[
   {

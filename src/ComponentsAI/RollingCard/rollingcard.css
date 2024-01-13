@@ -1,0 +1,31 @@
+
+.cube{
+    perspective: 1000px;
+    position: relative;
+    animation: rotate 1000ms ease;
+}
+
+.roll-card1,.roll-card3{
+transition: all 400ms ease;
+position: absolute;
+top: 0;
+left: 0;
+}
+.roll-card1{
+   transform: translateZ(125px);
+}
+
+.roll-card3{
+    transform: translateY(125px) rotateX(-90deg);
+    opacity: 0;
+}
+
+.cube:hover .roll-card3{
+    transform: translateZ(125px) rotateX(0deg);
+    opacity: 1;
+}
+
+.cube:hover .roll-card1{
+    transform: translateY(-125px) rotateX(90deg);
+    opacity: 0;
+}

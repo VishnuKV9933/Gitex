@@ -110,7 +110,9 @@
     color: #00aeba;
 }
 
-
+.ai-blue-bg{
+    background-color: var(--aiblue);
+}
 
 /* -----------------------ai---------------------------------- */
 
@@ -177,7 +179,7 @@ border: solid 1px rgba(0,174,186,1);
 /* --------------------------------------------------------- */
 
 .btn-out{
-    width: 170px;
+  
     height: 50px;
     border-radius: 50px;
     background-color: #00aeba;

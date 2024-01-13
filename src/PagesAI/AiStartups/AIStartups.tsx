@@ -9,7 +9,7 @@ export default function AIStartups():React.ReactElement {
     <section className='aistartup banner '>
         <h1>BECOME THE NEXT TECH GIANT</h1>
       </section>
-
+ 
       <section >
           <div className='flex flex-col sm:flex-row'>
               <div className='zoom-img w-full sm:w-1/2'>
@@ -46,7 +46,7 @@ export default function AIStartups():React.ReactElement {
                     <p className='text-stone-600 text-[13px] sm:text-[15px] md:text-[18px]'>invites disruptive startups like yours to vie for a $100,000 investment in front of an esteemed AI jury, instantly raising your profile within one of the world’s most prestigious, targeted communities</p>
                     <div className='flex justify-center'>
                       <Link to={'/aieverithing'}>
-                      <button className='btn-out'>
+                      <button className='btn-out w-[170px]'>
                           <div className='btn-in'>
                             <div className='btn-center-round'>
                               <div className='btn-item-1'>
@@ -59,7 +59,7 @@ export default function AIStartups():React.ReactElement {
                           </div>
                         <h1 >  Learn More</h1>
                       </button>
-                      </Link>
+                      </Link>                                                                               
                     </div>
               </div>
           </div>
@@ -70,7 +70,7 @@ export default function AIStartups():React.ReactElement {
                     <p className='text-stone-600 text-[13px] sm:text-[15px] md:text-[18px]'>conducted by global visionaries offer exclusive on-the-ground coaching to develop your capacity across industry niches</p>
                     <div className='flex justify-center'>
                       <Link to={'/aieverithing'}>
-                      <button className='btn-out'>
+                      <button className='btn-out w-[170px]'>
                           <div className='btn-in'>
                             <div className='btn-center-round'>
                               <div className='btn-item-1'>
