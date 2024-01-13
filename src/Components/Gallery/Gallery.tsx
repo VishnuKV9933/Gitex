@@ -1,8 +1,9 @@
-import React from "react";
-import img1 from '../../assets/sliderImg1.jpg'
-import img2 from '../../assets/sliderImg2.jpg'
-import img3 from '../../assets/sliderImg3.jpg'
+
+import { YoutubeVideo } from "../YoutubeVideo/YoutubeVideo";
 export default function Gallery(): React.ReactElement {
+
+
+
   return (
     <>
       <div className="px-[5%] grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -34,27 +35,21 @@ export default function Gallery(): React.ReactElement {
             bolder.
           </p>
         </div>
-        <div className="col-span-1 h-[300px] sm:h-[350px]">
-          <video className="w-full h-full" controls>
-            <source
-              src="blob:https://www.youtube.com/3fcd4005-aa49-4d7a-845f-2836ed1d07fe"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        
+         <YoutubeVideo/>
+   
       </div>
 
 
             <div  className="px-[5%] grid grid-cols-1 md:grid-cols-5 grid-rows-[200px,200px,200px,200px,200px,200px,200px] md:grid-rows-[150px,150px] gap-2 mt-6">
                 
-                <div className="col-span-1 md:col-span-2 md:row-span-2 row-span-1"><img className="w-full h-full" src={img1} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img2} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img3} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img1} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img3} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img1} alt="img" /></div>
-                <div className="col-span-1 "><img className="w-full h-full" src={img2} alt="img" /></div>
+                <div className="col-span-1 md:col-span-2 md:row-span-2 row-span-1"><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/leftimg.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img06.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img01.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img02.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img03.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img04.jpg" alt="img" /></div>
+                <div className="col-span-1 "><img className="w-full h-full" src="https://gitex.com/contents/Theme-3/images/gallery/G-img05.jpg" alt="img" /></div>
 
             </div>
 

@@ -49,9 +49,11 @@ export default function HeaderAi(): React.ReactElement {
           />
         </div>
         <ul className="w-1/2 h-full flex justify-end gap-[2%]">
+          <Link to='/aiexhibit'>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             EXHIBIT
           </li>
+          </Link>
           <li className="visit text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
             VISIT
             <ul className="visit-options">
@@ -74,12 +76,16 @@ export default function HeaderAi(): React.ReactElement {
           <li className="sectors text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
             SECTORS
             <ul className="sectors-options">
+            <Link to={'/aicreativeeconomy'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 CREATIVE ECONOMY
               </li>
+            </Link>
+            <Link to={'/aiyouthx'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 GITEX YOUTHX
               </li>
+            </Link>
               <Link to={'/aistartups'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 STARTUPS
@@ -114,9 +120,11 @@ export default function HeaderAi(): React.ReactElement {
             />
           </div>
           <ul className="w-1/2 h-full flex justify-end gap-[2%]">
+          <Link to='/aiexhibit'>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               EXHIBIT
             </li>
+          </Link>
             <li className="visit text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
               VISIT
               <ul className="visit-options">
@@ -139,12 +147,16 @@ export default function HeaderAi(): React.ReactElement {
             <li className="sectors text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
               SECTORS
               <ul className="sectors-options">
+                <Link to={'/aicreativeeconomy'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   CREATIVE ECONOMY
                 </li>
+                </Link>
+                   <Link to={'/aiyouthx'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   GITEX YOUTHX
                 </li>
+                   </Link>
                 <Link to={'/aistartups'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   STARTUPS

@@ -40,12 +40,14 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                 </div>
 
                 <ul className=''>
+                    <Link to='/aiexhibit'>
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>
                         EXHIBIT
                         <div onClick={()=>handleSetOpen('EXHIBIT')} className={`rotation-box w-[30px] h-[30px] bg-stone-200 rounded justify-center items-center flex ${open==='EXHIBIT'&&'option-rotate'}`}>
                                 <MdOutlineKeyboardArrowDown/>
                         </div>
                     </li>
+                    </Link>
                     <li className='w-full'>
                         <div  className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'> 
                         VISIT
@@ -81,12 +83,16 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                         </div>
                         </div>
                         <section className={`${open==='SELECTORS'?'h-[150px]':'h-[0px]'} transition-all duration-500 overflow-hidden w-full`}>
+                        <Link to={'/aicreativeeconomy'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 CREATIVE ECONOMY
                             </div>
+                            </Link>
+                            <Link to={'/aiyouthx'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 GITEX YOUTHX
                             </div>
+                            </Link>
                             <Link to={'/aistartups'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 STARTUPS
