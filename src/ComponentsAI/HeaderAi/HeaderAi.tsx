@@ -93,9 +93,11 @@ export default function HeaderAi(): React.ReactElement {
               </Link>
             </ul>
           </li>
+          <Link to={'/aiabout'}>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             ABOUT
           </li>
+          </Link>
           <Link to={'/ainews'}>
           <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
             NEWS
@@ -164,9 +166,11 @@ export default function HeaderAi(): React.ReactElement {
                 </Link>
               </ul>
             </li>
+            <Link to={'/aiabout'}>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               ABOUT
             </li>
+            </Link>
             <Link to={'/ainews'}>
             <li className="text-white font-bold text-[14px] cursor-pointer h-full flex items-center">
               NEWS

@@ -34,6 +34,7 @@ import AIStartups from './PagesAI/AiStartups/AIStartups';
 import AIExhibit from './PagesAI/AIExhibit/AIExhibit';
 import CreativeEconomy from './PagesAI/CreativeEconomy/CreativeEconomy';
 import AIYouthx from './PagesAI/AIYouthx/AIYouthx';
+import AIAbout from './PagesAI/AIAbout/AIAbout';
 function App() {
   return (
     
@@ -72,6 +73,7 @@ function App() {
   <Route path="/aiexhibit" element={<LayOutAI><AIExhibit /></LayOutAI>}/>
   <Route path="/aicreativeeconomy" element={<LayOutAI><CreativeEconomy /></LayOutAI>}/>
   <Route path="/aiyouthx" element={<LayOutAI><AIYouthx /></LayOutAI>}/>
+  <Route path="/aiabout" element={<LayOutAI><AIAbout /></LayOutAI>}/>
   
   
   

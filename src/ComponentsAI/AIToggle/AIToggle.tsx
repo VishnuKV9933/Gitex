@@ -100,12 +100,14 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                             </Link>
                         </section>
                     </li>
+                    <Link to={'/aiabout'}>
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>
                         ABOUT
                         <div onClick={()=>handleSetOpen('ABOUT')} className={`rotation-box w-[30px] h-[30px] bg-stone-200 rounded justify-center items-center flex ${open==='ABOUT'&&'option-rotate'}`}>
                                 <MdOutlineKeyboardArrowDown/>
                         </div>
                     </li>
+                    </Link>
                     <Link to={'/ainews'}>
 
                     <li className='flex px-[20px] justify-between items-center border-b h-[50px] text-stone-500 text-[15px] hover:text-blue-400 cursor-pointer'>
