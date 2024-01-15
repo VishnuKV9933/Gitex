@@ -3,7 +3,6 @@ import "./aiexhibit.css";
 import RollingCard from "../../ComponentsAI/RollingCard/RollingCard";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 import { Youtube } from "../../ComponentsAI/Youtube/Youtube";
 import { SponsorshipArroay } from "../../Constants/constants";
 
@@ -15,8 +14,7 @@ export default function AIExhibit(): React.ReactElement {
     const suddenOpenref=useRef(null)
     const videoelemref=useRef(null)
     
-    const linkArrray=['https://youtu.be/D6DujA67kNg','https://youtu.be/aapXXAa9yCo','https://youtu.be/OEHpgt9eP_E']
-
+    const videoIdArray=['OEHpgt9eP_E','D6DujA67kNg','aapXXAa9yCo']
     useEffect(() => {
 
         const rootMarginTop = '500px 0px 0px 0px';
@@ -259,10 +257,10 @@ export default function AIExhibit(): React.ReactElement {
                     <h3 className="ai-blue-font-Color text-center">Hear from industry leaders</h3>
                       <div id="videoelem" ref={videoelemref} className="video-container flex flex-col sm:flex-row justify-center items-center sm:justify-around flex-wrap gap-[10px] p-[10px]">
                        {
-                        linkArrray.map((link,index)=>{
+                        videoIdArray.map((id,index)=>{
                           return(
                               <div key={index} className="border-dotted video-elem  border-blue-400 p-[1%] border-2">
-                                <Youtube  link={link}/>
+                                <Youtube  id={id}/>
                               </div>
                           )
                         })

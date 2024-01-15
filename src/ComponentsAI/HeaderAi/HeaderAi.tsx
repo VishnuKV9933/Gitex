@@ -57,12 +57,16 @@ export default function HeaderAi(): React.ReactElement {
           <li className="visit text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
             VISIT
             <ul className="visit-options">
+            <Link to={'/aiwhyvisit'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 WHY VISIT
               </li>
+            </Link>
+            <Link to={'/aimediagallery'}>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
-                AGENDA
+                MEDIA GALLERY
               </li>
+              </Link>
               <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                 EXHIBITORS
               </li>
@@ -130,12 +134,16 @@ export default function HeaderAi(): React.ReactElement {
             <li className="visit text-white font-bold text-[14px] cursor-pointer h-full flex items-center relative">
               VISIT
               <ul className="visit-options">
+              <Link to={'/aiwhyvisit'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   WHY VISIT
                 </li>
+              </Link>
+              <Link to={'/aimediagallery'}>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
-                  AGENDA
+                  MEDIA GALLERY
                 </li>
+                </Link>
                 <li className="flex h-[40px] items-center pl-[10px] text-sm font-normal	border-b border-blue-300 text-stone-600">
                   EXHIBITORS
                 </li>

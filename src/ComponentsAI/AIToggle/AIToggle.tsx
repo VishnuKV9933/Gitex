@@ -56,12 +56,16 @@ export default function AIToggle({toggle,setToggleOpen}:aitoggleProps):React.Rea
                         </div>
                         </div>
                         <section className={`${open==='VISIT'?'h-[150px]':'h-[0px]'} transition-all duration-500 overflow-hidden w-full`}>
+                        <Link to={'/aiwhyvisit'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 WHY VISIT
                             </div>
+                            </Link>
+                            <Link to={'/aimediagallery'}>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
-                                AGENDA
+                                    MEDIA GALLERY
                             </div>
+                            </Link>
                             <div className='h-[50px] w-full border-b text-stone-500 text-[15px] flex px-[40px] justify-start items-center hover:text-blue-400 cursor-pointer'>
                                 EXHIBITORS
                             </div>

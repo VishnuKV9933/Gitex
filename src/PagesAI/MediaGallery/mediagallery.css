@@ -1,0 +1,43 @@
+.aimedia.banner{
+    background: url('https://www.ai-everything.com/Uploads/InnerBanner/f4469bbe-76dd-45c9-9754-b2fb7ea7e825.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aimedia.banner > h1{
+    line-height: 1.5;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f4f4f4;
+    color: #fff;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(70deg,#1e235700,#1e235703 50%,#01adbb 50%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    position: relative;
+transform: translateY(50%);
+}
+
+.white-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: white;
+}
+
+.gallery:hover .white-shadow{
+    opacity: .5;
+}

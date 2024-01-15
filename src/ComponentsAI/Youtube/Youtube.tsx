@@ -3,17 +3,19 @@ import YouTube, { YouTubeProps } from 'react-youtube';
 import getYouTubeID from 'get-youtube-id';
 
 type youtubeProps={
-    link:string
+    id:string
 }
 
-export function Youtube({link}:youtubeProps) {
+export function Youtube({id}:youtubeProps) {
   const onPlayerReady: YouTubeProps['onReady'] = (event) => {
     // access to player in all event handlers via event.target
     event.target.pauseVideo();
   }
 
 
-  const youtubeId = getYouTubeID(link)
+
+
+  
 
   const opts: YouTubeProps['opts'] = {
     height: '200',
@@ -24,5 +26,5 @@ export function Youtube({link}:youtubeProps) {
     },
   };
 
-  return <YouTube videoId={`${youtubeId}`} opts={opts} onReady={onPlayerReady} />;
+  return <YouTube videoId={`${id}`} opts={opts} onReady={onPlayerReady} />;
 }

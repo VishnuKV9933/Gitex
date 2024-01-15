@@ -18,6 +18,21 @@ import {
   SPONSORSHIP
 } from "../Types";
 
+export const aivisitimageGallery=[
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-1.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171103.jpg',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-7.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-10.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-2.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171102.jpg',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-8.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171105.jpg',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171101.jpg',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/med-gal-6.png',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171104.jpg',
+  'https://www.ai-everything.com/Uploads//Posts/ImageGallery/relive-the-best171106.jpg'
+]
+
 export const SponsorshipArroay :SPONSORSHIP[]=[
    {
     img: 'https://www.ai-everything.com/assets/img/Crowd.jpg',

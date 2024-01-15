@@ -1,5 +1,6 @@
 :root {
   --aiblue: #00aeba;
+  --aimediumdarkblue: #002b5c;
   --aidarkblue:#101f2e;
 }
 
@@ -53,6 +54,7 @@
 
 .center-blue-splictline{
     margin-bottom: 15px;
+ 
 }
 
 .center-blue-splictline::before {
@@ -121,6 +123,10 @@
 .ai-darkblue-text{
     color:var(--aidarkblue) ;
 }
+.ai-mediumdarkblue-text{
+    color:var(--aimediumdarkblue) ;
+}
+
 /* -----------------------ai---------------------------------- */
 
 .ai-header-btn{
