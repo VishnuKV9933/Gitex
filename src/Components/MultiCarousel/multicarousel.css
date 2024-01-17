@@ -1,29 +1,84 @@
-/* VerticalCarousel.css */
+.multic-container{
+  background: url('https://gitex.com/contents/Theme-3/images/tracksbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
 
-/* .vertical-carousel-container {
-    display: flex;
-    flex-direction: column;
-    height: 300px; 
-  }
-  
-  .vertical-carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    border: 1px solid #ccc;
-    background-color: #fff;
-  }
-   */
-   .card .img img{
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-   }
+.multic-container >h1::after{ 
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: 0%;
+  background-color: white;
+  width: 100px;
+  height: 5px;
+  z-index: 100;
+}
 
-   .carousel .card{
-    width: 80%;
-    height: 160px;
-    border: solid 1px black;
-    list-style: none;
-   }
+
+.multi-wrapper  .multi-carousel{
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: calc(100%);
+  /* gap: 16px; */
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+@media (min-width:768px){
+  .multi-wrapper  .multi-carousel{
+    grid-auto-rows: calc(100%/2);
+  }
+}
+
+.multi-carousel::-webkit-scrollbar{
+  display: none;
+} 
+
+.multi-card{
+  scroll-snap-align:start;
+}
+
+.multi-carousel:where(.multi-card){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multi-carousel.no-transition{
+  scroll-behavior: auto;
+}
+
+.multi-carousel.dragging{
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.card-effect{
+  position: absolute;
+  /* background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5)), url('../../assets/slider-v-bg.png'); */
+
+  background: linear-gradient(to bottom, transparent , hsl(240, 59%, 39%) 90%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+}
+
+.card-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: blue;
+}
+
+.card-item:hover{
+  color: white;
+}

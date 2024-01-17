@@ -12,6 +12,9 @@ export default function LatestNews():React.ReactElement {
   dispatch(menuClose());
   
 },[])
+
+const array = [...latestNews,...latestNews]
+
   return (
     <>
          <FixedHead/>
@@ -20,9 +23,9 @@ export default function LatestNews():React.ReactElement {
             </div>
 
             <div className='w-full p-[2%] flex justify-center items-center flex-wrap gap-[3%]'>
-            {latestNews.map((elem)=>{
+            {array.map((elem)=>{
                 return(
-                    <div className='h-[350px] mt-4'>
+                    <div className='h-[300px] sm:h-[350px] mt-4 w-[220px] sm:w-[300px] md:h-[350px] md:w-[350px]'>
 
                         <HscrollElem elem={elem}/>
                     </div>

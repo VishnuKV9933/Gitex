@@ -10,21 +10,6 @@
     transform: translate(-50%);
 }
 
-.horizontal-scroll-container{
-    display: flex;
-    overflow-x: scroll;
-    background-color:  #f1f1f1;
-    list-style: none;
-    gap: 10px;
-    /* transform: translate(-50%); */
-    width: 100vw;
-
-}
-
-/* .horizontal-scroll-container::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-} */
 
 .scroll-element{
     flex-shrink: 0;
@@ -101,3 +86,5 @@ background-color: white;
         opacity: .0;
     }
 } 
+
+

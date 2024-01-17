@@ -78,9 +78,7 @@ function App() {
   <Route path="/aiabout" element={<LayOutAI><AIAbout /></LayOutAI>}/>
   <Route path="/aiwhyvisit" element={<LayOutAI><AIWhyVisit /></LayOutAI>}/>
   <Route path="/aimediagallery" element={<LayOutAI><MediaGallery /></LayOutAI>}/>
-  
-  
-  
+
             <Route path="/register" element={<RegisterInterest />} /> 
             <Route path="/exhibit" element={<Exhibit/>} /> 
             <Route path="/presscenter" element={<PressCenter/>} /> 

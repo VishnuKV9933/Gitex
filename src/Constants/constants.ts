@@ -337,30 +337,6 @@ export const latestNews: LATEXTNEWS[] = [
     discription:
       " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
   },
-  {
-    img: "https://gitex.com/Uploads//Posts/news/18.jpg",
-    content: "Industry News",
-    discription:
-      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
-  },
-  {
-    img: "https://gitex.com/Uploads//Posts/news/ciscosplunk.jpg",
-    content: "Press Release",
-    discription:
-      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
-  },
-  {
-    img: "https://gitex.com/Uploads//Posts/news/attendeeinterview.jpg",
-    content: "Industry News",
-    discription:
-      "GITEX catalyses global tech ecosystem expansion with momentous European launch in world’s most dominant tech economy",
-  },
-  {
-    img: "https://gitex.com/Uploads//Posts/news/amazonrainforest.jpg",
-    content: "Press Release",
-    discription:
-      " GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy ",
-  },
 ];
 
 export const gallery: string[] = [img1, img2, img3, img4, img5, img6, img7];
@@ -870,18 +846,18 @@ export const persons = [
       "https://gitex.com/Uploads//Posts/Speakers%202023/Christine%20GZ%E2%80%8B.jpg",
   },
   {
-    name: "Amanda Drury",
-    designation: "Anchor",
-    company: "CNBC",
-    country: "Australia",
-    Image: "https://gitex.com/Uploads//Posts/Amanda%20Drury.png",
-  },
-  {
     name: "DR. YANNIS IOANNIDIS President​",
     designation: "Association of Computing Machinery",
     company: "Extreme E",
     country: "Greece",
     Image: "https://gitex.com/Uploads//Posts/Speakers%202023/yannis.jpg",
+  },
+  {
+    name: "Amanda Drury",
+    designation: "Anchor",
+    company: "CNBC",
+    country: "Australia",
+    Image: "https://gitex.com/Uploads//Posts/Amanda%20Drury.png",
   },
 
   {

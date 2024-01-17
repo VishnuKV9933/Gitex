@@ -5,10 +5,11 @@ import AiSpeakers from '../../Components/AISpeakers/AiSpeakers'
 import { LiaDotCircleSolid } from "react-icons/lia";
 import { FaPlus } from 'react-icons/fa6';
 import AISlider from '../../Components/AISlider/AISlider';
-import InfiniteSlider from '../../Components/InfiniteSlider/InfiniteSlider';
+
 
 import { useDispatch } from 'react-redux';
 import { menuClose } from '../../Redux/Gitex';
+import ScrollComponent from '../../Components/ScrollComponent/Scrollcomponent';
 
 
 export default function AI():React.ReactElement {
@@ -146,18 +147,17 @@ export default function AI():React.ReactElement {
 {/* ----------faq---end--------- */}
 <AISlider/>
 
-<>
-
-
-<div  className='w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center'>
-    <h1 className='happening-header text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative'>Latest News</h1>
-</div>
+   {/* slider start */}
+   <>
+        <div className="w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center">
+          <h1 className="happening-header mb-[30px] text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative">
+            Latest News
+          </h1>
+        <ScrollComponent/>
+        </div>
  
-
-<InfiniteSlider/>
-
-
-</>
+      </>
+      {/* slider end */}
 
 
     </>

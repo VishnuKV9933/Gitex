@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import './HorizontalScroll.css'
-import HscrollElem from './HscrollElem';
 import { latestNews } from "../../Constants/constants";
 type Element = {
      img: string,
@@ -8,230 +7,214 @@ type Element = {
      discription: string,
      };
 export default function HorizontalScroll():React.ReactElement {
-    const elemRef = useRef<HTMLDivElement | null>(null);
-    const [isMouseDawn,setMouseDown]=useState(false)
+
+    const carouselRef = useRef<HTMLUListElement | null>(null);
+const elemRef = useRef<HTMLLIElement | null>(null);
+ const [isMouseDawn,setMouseDown]=useState(false)
     const [startX,setStartX]=useState(0)
     const [scrollLeft,setScrollLeft]=useState(0)
-    const [entry, setEntry] = useState<IntersectionObserverEntry[] | null>([]);
-    const [scrollX,setScrollX]=useState(0)
-    const [scrollDirection,setScrollDirection]=useState('')
-    const [walk,setWalk]=useState(0)
+
+    const [cardPerView,setCardPerView] = useState(0)
+
+    const [firstCardWidth,setFirstCardWidth] =  useState(0)
+
+    const [carouselChildren, setCarouselChildren] = useState<globalThis.Element[]|null>(null);
 
 
-    // const [moveleft]
-    
-  
-
-  
-    const [elemts,setElements]=useState(latestNews)
-
-    function handleMouseDawn(e: React.MouseEvent<HTMLDivElement>){
-        setMouseDown(true)
-        if (elemRef.current) {
-            
-            setStartX(e.pageX - elemRef.current.offsetLeft as number);
-            setScrollLeft(elemRef.current?.scrollLeft)
-          }
-    }
-
-    function handleMouseLeave(e: React.MouseEvent<HTMLDivElement>|React.TouchEvent<HTMLDivElement>){
-        setMouseDown(false)
-
-    }
-
-    function handleMouseUp(){
-        setMouseDown(false)
-    }
-
-    function handleMouseMove(e: React.MouseEvent<HTMLDivElement>){
-        if(!isMouseDawn) return
-        e.preventDefault()
-        if (elemRef.current) {
-
-            const x =e.pageX-elemRef.current?.offsetLeft;
-            // const walk = (x-startX)
-            setWalk(x-startX)
-            elemRef.current.scrollLeft=scrollLeft-walk
-
-
-       
-            
-        }
-
-    }
-    
-    let lastChild = elemRef.current?.children[elemRef.current?.children.length - 2]
-    let firstChild = elemRef.current?.children[1]
-
-// setting up scroll position approximate center
-    useEffect(()=>{
-        if (elemRef.current) {
-            const elementWidth = elemRef.current.offsetWidth;
-          
-            // console.log('Element Width:', elementWidth,elemRef.current.scrollLeft);
-
-            if(elementWidth>700){
-
-                elemRef.current.scrollLeft=elementWidth/2
-            }else if(elementWidth>350){
-                elemRef.current.scrollLeft=elementWidth
-            }else{
-                elemRef.current.scrollLeft=2*elementWidth
-            }
-        }
-    },[elemRef?.current?.offsetWidth])
-
-useEffect(() => {
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    };
-       
-
-    const handleIntersection: IntersectionObserverCallback = (entries) => {
-        // console.log("hhhhh",entries);
-        setEntry(entries)
-        entries.forEach((entry,index) => {
-            let previous
-           
-            const isFirstChild = entry.target === elemRef.current?.children[1];
-            const isLastChild = entry.target === elemRef.current?.children[elemRef.current?.children.length - 2];      // Check if the entry is the first or last element in the array
-            if (entry.isIntersecting) {
-             
-
-                if(isFirstChild){
-                    setEele()
-                }
-
-                // setScrollX(elemRef.current?.scrollLeft ?? 0)
-
-                // setEele()
-                
+    useLayoutEffect(()=>{
+        setCarouselChildren(
+            ()=>{
+                const children = carouselRef.current?.children;
               
-            }else{
-              
-            }
                 
+                return children ? [...children] : [];}
+        )
+    },[])
 
-        });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
-
-    // Observe the first and last elements
-    if (elemRef.current) {
-       
-        // const childrenArray = [...elemRef.current.children];
-
-        // childrenArray.forEach((child) => {
-        //     observer.observe(child);
-        //   });
-
-
-       observer.observe(elemRef.current?.children[1]);
-observer.observe(elemRef.current?.children[elemRef.current?.children.length - 2]!);
-
-    }
-
-    return () => {
-        observer.disconnect();
-    };
-}, [lastChild,firstChild]); // Ensure this effect runs only once when the component mounts
-
-useEffect(()=>{
-  
-   
-    if(elemRef?.current?.scrollLeft){
-
-        if(scrollX>elemRef?.current?.scrollLeft){
-            setScrollDirection('left')
-            scrollLeft()
-           
-        }else if(scrollX<elemRef?.current?.scrollLeft){
-            setScrollDirection('right')
-            scrollRight()
-        }
-    }
-    function scrollLeft(){
-        console.log("left");
-        setElements((prev)=>{
-            return[ {img:"https://gitex.com/Uploads// Posts/news/dubai-rts.jpg",
-            content:"rrrrrr ",
-            discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-             },...prev]
-
-            })
-            if (elemRef.current) {
-                // Get the current scrollLeft value
-                const currentScrollLeft = elemRef.current.scrollLeft;
-                // Add 500px to the current scrollLeft value
-                const newScrollLeft = currentScrollLeft + (400);
-                console.log(elemRef.current.scrollLeft,"elemRef.current.scrollLeft");
-                
-                // Set the updated scrollLeft value
-                elemRef.current.scrollLeft = newScrollLeft;
-                console.log(elemRef.current.scrollLeft,"elemRef.current.scrollLeft");
-                // setWalk(prev=>prev-500)
-                // setScrollLeft(prev=>prev-500)
-              }
-    }
-    
-    function scrollRight(){
-        console.log("right");
-       
-
-    }
-    
-    
-},[entry])
-
-
-const setEele=()=>{
-
-
-    setElements((prev)=>{
+      
+    useLayoutEffect(()=>{
+      if(elemRef.current){
+        console.log(elemRef.current.offsetWidth,"elemRef.current.offsetWidth");
         
-       
-        
-        return[ {img:"https://gitex.com/Uploads//Posts/news/dubai-rts.jpg",
-        content:"Press ",
-        discription:" GITEX GLOBAL, Expand North Star 2023 centre worlds attention on booming AI economy "        
-         },...prev]
-    })
-    if (elemRef.current) {
-        // Get the current scrollLeft value
-        const currentScrollLeft = elemRef.current.scrollLeft;
-  
-        // Add 500px to the current scrollLeft value
-        const newScrollLeft = currentScrollLeft + 500;
-  
-        // Set the updated scrollLeft value
-        elemRef.current.scrollLeft = newScrollLeft;
+          setFirstCardWidth(elemRef.current.offsetWidth)
       }
-}
+  
+  
+  },[elemRef.current?.offsetWidth])
+  
+  
+    useLayoutEffect(()=>{
+      if(carouselRef.current){
+          let cardView =Math.round(carouselRef?.current?.offsetWidth / firstCardWidth)
+          // setCardPerView(cardView)
+          setCardPerView(6)
+      }
+  },[])
+  
+  
+  
+  
+  useEffect(()=>{
+    console.log("keri");
+    
+    let num=0
+    function insetCopiesToBegining(){
+  
+      // console.log("evidekeri",carouselChildren);
+        if(carouselChildren){
+          carouselChildren.slice(-cardPerView).reverse().forEach((elem)=>{
+              // console.log(elem);
+              // console.log(num,'num');
+              num++
+              
+              carouselRef.current?.insertAdjacentHTML('afterbegin',elem.outerHTML)
+          })
+        }
+        
+        
+    }
+  
+    function insetCopiesToEnd(){
+        if(carouselChildren){
+  
+          carouselChildren.slice(0,cardPerView).forEach((elem)=>{
+              
+              carouselRef.current?.insertAdjacentHTML('beforeend',elem.outerHTML)
+  
+              // console.log(elem);
+              // console.log(num,'num');
+              num++
+          })
+        }
+    }
+  
+    insetCopiesToBegining()
+    insetCopiesToEnd()
+  },[carouselChildren])
+  
+  
+  
+  
+  
+  if(elemRef.current){
+    console.log(elemRef.current.offsetWidth,"elemRef..offsetWidth");
+    
+  }
+  
+  
+  useEffect(()=>{
+    carouselRef.current?.addEventListener('scroll',infinitescroll)
+    return ()=>{
+        carouselRef.current?.removeEventListener('scroll',infinitescroll)
+    }
+  },[])
+  
+  function infinitescroll(){
+  
+    if(carouselRef.current){
+  console.log(carouselRef.current.scrollLeft,"scrollleft");
+  console.log(carouselRef?.current?.offsetWidth,"offsetwidth");
+  
+  
+    }
+  
+    
+   if(carouselRef.current&&elemRef?.current?.offsetWidth){
+          console.log(firstCardWidth,"firstCardWidth");
+          
+        if(carouselRef.current?.scrollLeft===0){
+            carouselRef.current.classList.add('no-transition')
+            carouselRef.current.scrollLeft=(2*(carouselRef?.current?.offsetWidth))
+            // carouselRef.current.scrollLeft=1853
+            carouselRef.current.classList.remove('no-transition')
+        }else if(carouselRef.current?.scrollLeft=== carouselRef?.current?.scrollWidth-(carouselRef?.current?.offsetWidth)){
+            carouselRef.current.classList.add('no-transition')
+            carouselRef.current.scrollLeft=2*(carouselRef?.current?.offsetWidth)+(elemRef.current.offsetWidth*2)
+            carouselRef.current.classList.remove('no-transition')
+        }
+    }
+  
+  
+  }
+  
+    // mouse controll
+  
+      function handleMouseDawn(e: React.MouseEvent<HTMLUListElement>){
+          setMouseDown(true)
+          if (carouselRef.current) {
+            carouselRef.current.classList.add("dragging")
+              setStartX(e.pageX - carouselRef.current.offsetLeft as number);
+              setScrollLeft(carouselRef.current?.scrollLeft)
+            }
+      }
+  
+      function handleMouseLeave(e: React.MouseEvent<HTMLUListElement>|React.TouchEvent<HTMLUListElement>){
+          setMouseDown(false)
+  
+      }
+  
+      function handleMouseUp(){
+          setMouseDown(false)
+          if(carouselRef.current){
+            carouselRef.current.classList.remove('dragging')
+          }
+      }
+  
+      function handleMouseMove(e: React.MouseEvent<HTMLUListElement>){
+          if(!isMouseDawn) return
+          e.preventDefault()
+          if (carouselRef.current) {
+  
+              const x =e.pageX-carouselRef.current?.offsetLeft;
+              const walk = (x-startX)
+              // setWalk(x-startX)
+              carouselRef.current.scrollLeft=scrollLeft-walk
+          }
+  
+      }
+      
+  
+    
+  
+
 
 
   return (
     <>
 
-    <button onClick={setEele} className='bg-red-400'>fkdsfkdsfklj</button>
 
-    <div
-    onMouseDown={handleMouseDawn}
-    onMouseLeave={handleMouseLeave}
-    onMouseUp={handleMouseUp}
-    onMouseMove={handleMouseMove}
-     ref={elemRef} className='horizontal-scroll-container h-[300px] sm:h-[400px] md:h-[500px]  pb-[5%]  '>
-        
-        {
-            elemts.map((elem:Element,index)=>{
+<div className="">
+        <div className="wrapper">
+          <ul
+          ref={carouselRef}
+ onMouseDown={handleMouseDawn}
+ onMouseLeave={handleMouseLeave}
+ onMouseUp={handleMouseUp}
+ onMouseMove={handleMouseMove}
+           className="carousel">
+           
+           {
+            latestNews.map((elem:Element,index)=>{
                 return( 
-                    <HscrollElem key={index} elem={elem }/>
+
+                    <li
+                    key={index}
+                    ref={elemRef}
+                    className="card bg-black border h-[600px]">
+                        {/* <HscrollElem elem={elem }/> */}
+                         
+                   </li>
                 )
             })
         }
+
+
+          </ul>
+        </div>
     </div>
+
+        
+       
     </>
   )
 }

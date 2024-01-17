@@ -9,20 +9,21 @@ import fb from '../../assets/fb.png'
 import mm from '../../assets/mm.png'
 import gtxwhitelogo from '../../assets/footerbottom1.png'
 import trbot2 from '../../assets/translatebottom2.png'
-import { persons,latestNews } from '../../Constants/constants'
+import { persons } from '../../Constants/constants'
 import VerticalScroll from '../../Components/VerticalScroll/VerticalScroll';
-import HorizontalScroll from '../../Components/HorizontalScroll/HorizontalScroll';
 import Happenings from '../../Components/Happenings/Happenings';
 import FixedHead from '../../Components/FixedHead/FixedHead';
-import MuitiCarousel from '../../Components/MultiCarousel/MuitiCarousel';
-import InfiniteSlider from '../../Components/InfiniteSlider/InfiniteSlider';
+
 
 import { useDispatch } from 'react-redux';
 import { menuClose } from '../../Redux/Gitex';
+import ScrollComponent from '../../Components/ScrollComponent/Scrollcomponent';
 
 
 export default function WhyVisit():React.ReactElement {
 
+  const array=persons
+  const reversePerson=[...array]
 
   const dispatch = useDispatch();
   useEffect(()=>{
@@ -135,8 +136,8 @@ export default function WhyVisit():React.ReactElement {
       <div className='w-full sm:w-[60%]  h-full flex justify-center gap-3 sm:justify-start sm:gap-8'>
        
         
-        <VerticalScroll persons={persons.slice(0,4)} />
-        <VerticalScroll persons={persons.slice(0,4)} />
+        <VerticalScroll persons={persons.slice(0,5)} />
+        <VerticalScroll persons={reversePerson.slice(0,5).reverse()} />
         
       
       </div>
@@ -148,18 +149,17 @@ export default function WhyVisit():React.ReactElement {
 {/* exclusive happenings start */}
 <Happenings/>
 {/* exclusive happenings start */}
-<>
-
-
-<div  className='w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center'>
-    <h1 className='happening-header text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative'>Latest News</h1>
-</div>
+   {/* slider start */}
+   <>
+        <div className="w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center">
+          <h1 className="happening-header mb-[30px] text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative">
+            Latest News
+          </h1>
+        <ScrollComponent/>
+        </div>
  
-{/* <HorizontalScroll/> */}
-<InfiniteSlider/>
-
-{/* <MuitiCarousel/> */}
-</>
+      </>
+      {/* slider end */}
     </div>
   )
 }

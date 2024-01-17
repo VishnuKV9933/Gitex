@@ -4,6 +4,8 @@ import InfiniteSlider from "../../Components/InfiniteSlider/InfiniteSlider";
 import FixedHead from "../../Components/FixedHead/FixedHead";
 import { useDispatch } from 'react-redux';
 import { menuClose} from '../../Redux/Gitex';
+import HorizontalScroll from "../../Components/HorizontalScroll/HorizontalScroll";
+import ScrollComponent from "../../Components/ScrollComponent/Scrollcomponent";
 
 export default function AboutGitex(): React.ReactElement {
   const dispatch = useDispatch();
@@ -78,11 +80,12 @@ export default function AboutGitex(): React.ReactElement {
       {/* slider start */}
       <>
         <div className="w-full bg-stone-200 p-[5%] flex flex-col justify-center items-center    text-center">
-          <h1 className="happening-header text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative">
+          <h1 className="happening-header mb-[30px] text-xl sm:text-2xl md:text-4xl text-blue-900 font-semibold  flex break-words relative">
             Latest News
           </h1>
+        <ScrollComponent/>
         </div>
-        <InfiniteSlider />
+ 
       </>
       {/* slider end */}
     </>
